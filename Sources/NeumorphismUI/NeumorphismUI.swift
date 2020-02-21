@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-extension Color {
+public extension Color {
     init(hex: String, opacity: Double = 1.0) {
         let v = Int(hex, radix: 16) ?? 0
         let r = Double(v / Int(powf(256, 2)) % 256) / 255
