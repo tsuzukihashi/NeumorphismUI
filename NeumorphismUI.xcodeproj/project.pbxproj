@@ -3,65 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		"NeumorphismUI::NeumorphismUIPackageTests::ProductTarget" /* NeumorphismUIPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "NeumorphismUIPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_34 /* PBXTargetDependency */,
-			);
-			name = NeumorphismUIPackageTests;
-			productName = NeumorphismUIPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		DAB7E9FA24003E9D005D4DF5 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */; };
-		DAB7E9FB24003E9D005D4DF5 /* NeumorphismUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		OBJ_22 /* NeumorphismUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* NeumorphismUI.swift */; };
-		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_40 /* NeumorphismUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* NeumorphismUITests.swift */; };
-		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
-		OBJ_43 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */; };
+		DAB7EA2624004173005D4DF5 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; };
+		DAB7EA2B24004173005D4DF5 /* NeumorphismUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA2A24004173005D4DF5 /* NeumorphismUITests.swift */; };
+		DAB7EA2D24004173005D4DF5 /* NeumorphismUI.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB7EA1F24004173005D4DF5 /* NeumorphismUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB7EA372400A51B005D4DF5 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA362400A51B005D4DF5 /* Color+.swift */; };
+		DAB7EA6B240180CE005D4DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA6A240180CE005D4DF5 /* AppDelegate.swift */; };
+		DAB7EA6D240180CE005D4DF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA6C240180CE005D4DF5 /* SceneDelegate.swift */; };
+		DAB7EA6F240180CE005D4DF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA6E240180CE005D4DF5 /* ContentView.swift */; };
+		DAB7EA71240180D0005D4DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA70240180D0005D4DF5 /* Assets.xcassets */; };
+		DAB7EA74240180D0005D4DF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA73240180D0005D4DF5 /* Preview Assets.xcassets */; };
+		DAB7EA77240180D0005D4DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA75240180D0005D4DF5 /* LaunchScreen.storyboard */; };
+		DAB7EA7C24018179005D4DF5 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; };
+		DAB7EA7D24018179005D4DF5 /* NeumorphismUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DAB7E9DE23FF262C005D4DF5 /* PBXContainerItemProxy */ = {
+		DAB7EA2724004173005D4DF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
+			containerPortal = DAB7EA1324004173005D4DF5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "NeumorphismUI::NeumorphismUI";
+			remoteGlobalIDString = DAB7EA1B24004173005D4DF5;
 			remoteInfo = NeumorphismUI;
 		};
-		DAB7E9E023FF2696005D4DF5 /* PBXContainerItemProxy */ = {
+		DAB7EA7E24018179005D4DF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
+			containerPortal = DAB7EA1324004173005D4DF5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "NeumorphismUI::NeumorphismUITests";
-			remoteInfo = NeumorphismUITests;
-		};
-		DAB7E9FC24003E9D005D4DF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NeumorphismUI::NeumorphismUI";
+			remoteGlobalIDString = DAB7EA1B24004173005D4DF5;
 			remoteInfo = NeumorphismUI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DAB7E9FE24003E9D005D4DF5 /* Embed Frameworks */ = {
+		DAB7EA8024018179005D4DF5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DAB7E9FB24003E9D005D4DF5 /* NeumorphismUI.framework in Embed Frameworks */,
+				DAB7EA7D24018179005D4DF5 /* NeumorphismUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,135 +53,141 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DAB7E9DF23FF2695005D4DF5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DAB7E9E524003E8D005D4DF5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		"NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NeumorphismUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"NeumorphismUI::NeumorphismUITests::Product" /* NeumorphismUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeumorphismUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* NeumorphismUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismUITests.swift; sourceTree = "<group>"; };
-		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* NeumorphismUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismUI.swift; sourceTree = "<group>"; };
+		DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeumorphismUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7EA1F24004173005D4DF5 /* NeumorphismUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NeumorphismUI.h; sourceTree = "<group>"; };
+		DAB7EA2024004173005D4DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB7EA2524004173005D4DF5 /* NeumorphismUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeumorphismUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7EA2A24004173005D4DF5 /* NeumorphismUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismUITests.swift; sourceTree = "<group>"; };
+		DAB7EA2C24004173005D4DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB7EA362400A51B005D4DF5 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		DAB7EA68240180CE005D4DF5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7EA6A240180CE005D4DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAB7EA6C240180CE005D4DF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DAB7EA6E240180CE005D4DF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DAB7EA70240180D0005D4DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB7EA73240180D0005D4DF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAB7EA76240180D0005D4DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAB7EA78240180D0005D4DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DAB7E9E224003E8D005D4DF5 /* Frameworks */ = {
+		DAB7EA1924004173005D4DF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB7E9FA24003E9D005D4DF5 /* NeumorphismUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_23 /* Frameworks */ = {
+		DAB7EA2224004173005D4DF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
+				DAB7EA2624004173005D4DF5 /* NeumorphismUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_42 /* Frameworks */ = {
+		DAB7EA65240180CE005D4DF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_43 /* NeumorphismUI.framework in Frameworks */,
+				DAB7EA7C24018179005D4DF5 /* NeumorphismUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DAB7E9F924003E9D005D4DF5 /* Frameworks */ = {
+		DAB7EA1224004173005D4DF5 = {
+			isa = PBXGroup;
+			children = (
+				DAB7EA1E24004173005D4DF5 /* NeumorphismUI */,
+				DAB7EA2924004173005D4DF5 /* NeumorphismUITests */,
+				DAB7EA69240180CE005D4DF5 /* Demo */,
+				DAB7EA1D24004173005D4DF5 /* Products */,
+				DAB7EA5E2400EF7C005D4DF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB7EA1D24004173005D4DF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */,
+				DAB7EA2524004173005D4DF5 /* NeumorphismUITests.xctest */,
+				DAB7EA68240180CE005D4DF5 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB7EA1E24004173005D4DF5 /* NeumorphismUI */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7EA1F24004173005D4DF5 /* NeumorphismUI.h */,
+				DAB7EA362400A51B005D4DF5 /* Color+.swift */,
+				DAB7EA2024004173005D4DF5 /* Info.plist */,
+			);
+			path = NeumorphismUI;
+			sourceTree = "<group>";
+		};
+		DAB7EA2924004173005D4DF5 /* NeumorphismUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7EA2A24004173005D4DF5 /* NeumorphismUITests.swift */,
+				DAB7EA2C24004173005D4DF5 /* Info.plist */,
+			);
+			path = NeumorphismUITests;
+			sourceTree = "<group>";
+		};
+		DAB7EA5E2400EF7C005D4DF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		OBJ_10 /* Tests */ = {
+		DAB7EA69240180CE005D4DF5 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* NeumorphismUITests */,
+				DAB7EA6A240180CE005D4DF5 /* AppDelegate.swift */,
+				DAB7EA6C240180CE005D4DF5 /* SceneDelegate.swift */,
+				DAB7EA6E240180CE005D4DF5 /* ContentView.swift */,
+				DAB7EA70240180D0005D4DF5 /* Assets.xcassets */,
+				DAB7EA75240180D0005D4DF5 /* LaunchScreen.storyboard */,
+				DAB7EA78240180D0005D4DF5 /* Info.plist */,
+				DAB7EA72240180D0005D4DF5 /* Preview Content */,
 			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_11 /* NeumorphismUITests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* NeumorphismUITests.swift */,
-				OBJ_13 /* XCTestManifests.swift */,
-			);
-			name = NeumorphismUITests;
-			path = Tests/NeumorphismUITests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_14 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"NeumorphismUI::NeumorphismUITests::Product" /* NeumorphismUITests.xctest */,
-				"NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */,
-				DAB7E9E524003E8D005D4DF5 /* Demo.app */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_5 = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				DAB7E9DF23FF2695005D4DF5 /* README.md */,
-				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_14 /* Products */,
-				DAB7E9F924003E9D005D4DF5 /* Frameworks */,
-			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
-		OBJ_7 /* Sources */ = {
+		DAB7EA72240180D0005D4DF5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* NeumorphismUI */,
+				DAB7EA73240180D0005D4DF5 /* Preview Assets.xcassets */,
 			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* NeumorphismUI */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* NeumorphismUI.swift */,
-			);
-			name = NeumorphismUI;
-			path = Sources/NeumorphismUI;
-			sourceTree = SOURCE_ROOT;
+			path = "Preview Content";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		DAB7E9E424003E8D005D4DF5 /* Demo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAB7E9F624003E8F005D4DF5 /* Build configuration list for PBXNativeTarget "Demo" */;
-			buildPhases = (
-				DAB7E9E124003E8D005D4DF5 /* Sources */,
-				DAB7E9E224003E8D005D4DF5 /* Frameworks */,
-				DAB7E9E324003E8D005D4DF5 /* Resources */,
-				DAB7E9FE24003E9D005D4DF5 /* Embed Frameworks */,
+/* Begin PBXHeadersBuildPhase section */
+		DAB7EA1724004173005D4DF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7EA2D24004173005D4DF5 /* NeumorphismUI.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-				DAB7E9FD24003E9D005D4DF5 /* PBXTargetDependency */,
-			);
-			name = Demo;
-			productName = Demo;
-			productReference = DAB7E9E524003E8D005D4DF5 /* Demo.app */;
-			productType = "com.apple.product-type.application";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		"NeumorphismUI::NeumorphismUI" /* NeumorphismUI */ = {
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DAB7EA1B24004173005D4DF5 /* NeumorphismUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "NeumorphismUI" */;
+			buildConfigurationList = DAB7EA3024004173005D4DF5 /* Build configuration list for PBXNativeTarget "NeumorphismUI" */;
 			buildPhases = (
-				OBJ_21 /* Sources */,
-				OBJ_23 /* Frameworks */,
+				DAB7EA1724004173005D4DF5 /* Headers */,
+				DAB7EA1824004173005D4DF5 /* Sources */,
+				DAB7EA1924004173005D4DF5 /* Frameworks */,
+				DAB7EA1A24004173005D4DF5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -205,153 +195,179 @@
 			);
 			name = NeumorphismUI;
 			productName = NeumorphismUI;
-			productReference = "NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */;
+			productReference = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"NeumorphismUI::NeumorphismUITests" /* NeumorphismUITests */ = {
+		DAB7EA2424004173005D4DF5 /* NeumorphismUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "NeumorphismUITests" */;
+			buildConfigurationList = DAB7EA3324004173005D4DF5 /* Build configuration list for PBXNativeTarget "NeumorphismUITests" */;
 			buildPhases = (
-				OBJ_39 /* Sources */,
-				OBJ_42 /* Frameworks */,
+				DAB7EA2124004173005D4DF5 /* Sources */,
+				DAB7EA2224004173005D4DF5 /* Frameworks */,
+				DAB7EA2324004173005D4DF5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_44 /* PBXTargetDependency */,
+				DAB7EA2824004173005D4DF5 /* PBXTargetDependency */,
 			);
 			name = NeumorphismUITests;
 			productName = NeumorphismUITests;
-			productReference = "NeumorphismUI::NeumorphismUITests::Product" /* NeumorphismUITests.xctest */;
+			productReference = DAB7EA2524004173005D4DF5 /* NeumorphismUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		"NeumorphismUI::SwiftPMPackageDescription" /* NeumorphismUIPackageDescription */ = {
+		DAB7EA67240180CE005D4DF5 /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "NeumorphismUIPackageDescription" */;
+			buildConfigurationList = DAB7EA79240180D0005D4DF5 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
-				OBJ_28 /* Sources */,
+				DAB7EA64240180CE005D4DF5 /* Sources */,
+				DAB7EA65240180CE005D4DF5 /* Frameworks */,
+				DAB7EA66240180CE005D4DF5 /* Resources */,
+				DAB7EA8024018179005D4DF5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAB7EA7F24018179005D4DF5 /* PBXTargetDependency */,
 			);
-			name = NeumorphismUIPackageDescription;
-			productName = NeumorphismUIPackageDescription;
-			productType = "com.apple.product-type.framework";
+			name = Demo;
+			productName = Demo;
+			productReference = DAB7EA68240180CE005D4DF5 /* Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
+		DAB7EA1324004173005D4DF5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftMigration = 9999;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ryo Tsuzukihashi";
 				TargetAttributes = {
-					DAB7E9E424003E8D005D4DF5 = {
+					DAB7EA1B24004173005D4DF5 = {
 						CreatedOnToolsVersion = 11.3.1;
-						DevelopmentTeam = A93B2TPWBT;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1130;
+					};
+					DAB7EA2424004173005D4DF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DAB7EA67240180CE005D4DF5 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "NeumorphismUI" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = DAB7EA1624004173005D4DF5 /* Build configuration list for PBXProject "NeumorphismUI" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_14 /* Products */;
+			mainGroup = DAB7EA1224004173005D4DF5;
+			productRefGroup = DAB7EA1D24004173005D4DF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"NeumorphismUI::NeumorphismUI" /* NeumorphismUI */,
-				"NeumorphismUI::SwiftPMPackageDescription" /* NeumorphismUIPackageDescription */,
-				"NeumorphismUI::NeumorphismUIPackageTests::ProductTarget" /* NeumorphismUIPackageTests */,
-				"NeumorphismUI::NeumorphismUITests" /* NeumorphismUITests */,
-				DAB7E9E424003E8D005D4DF5 /* Demo */,
+				DAB7EA1B24004173005D4DF5 /* NeumorphismUI */,
+				DAB7EA2424004173005D4DF5 /* NeumorphismUITests */,
+				DAB7EA67240180CE005D4DF5 /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DAB7E9E324003E8D005D4DF5 /* Resources */ = {
+		DAB7EA1A24004173005D4DF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		DAB7E9E124003E8D005D4DF5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		DAB7EA2324004173005D4DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+		DAB7EA66240180CE005D4DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_22 /* NeumorphismUI.swift in Sources */,
+				DAB7EA77240180D0005D4DF5 /* LaunchScreen.storyboard in Resources */,
+				DAB7EA74240180D0005D4DF5 /* Preview Assets.xcassets in Resources */,
+				DAB7EA71240180D0005D4DF5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_28 /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB7EA1824004173005D4DF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_29 /* Package.swift in Sources */,
+				DAB7EA372400A51B005D4DF5 /* Color+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_39 /* Sources */ = {
+		DAB7EA2124004173005D4DF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_40 /* NeumorphismUITests.swift in Sources */,
-				OBJ_41 /* XCTestManifests.swift in Sources */,
+				DAB7EA2B24004173005D4DF5 /* NeumorphismUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB7EA64240180CE005D4DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB7EA6B240180CE005D4DF5 /* AppDelegate.swift in Sources */,
+				DAB7EA6D240180CE005D4DF5 /* SceneDelegate.swift in Sources */,
+				DAB7EA6F240180CE005D4DF5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DAB7E9FD24003E9D005D4DF5 /* PBXTargetDependency */ = {
+		DAB7EA2824004173005D4DF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "NeumorphismUI::NeumorphismUI" /* NeumorphismUI */;
-			targetProxy = DAB7E9FC24003E9D005D4DF5 /* PBXContainerItemProxy */;
+			target = DAB7EA1B24004173005D4DF5 /* NeumorphismUI */;
+			targetProxy = DAB7EA2724004173005D4DF5 /* PBXContainerItemProxy */;
 		};
-		OBJ_34 /* PBXTargetDependency */ = {
+		DAB7EA7F24018179005D4DF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "NeumorphismUI::NeumorphismUITests" /* NeumorphismUITests */;
-			targetProxy = DAB7E9E023FF2696005D4DF5 /* PBXContainerItemProxy */;
-		};
-		OBJ_44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NeumorphismUI::NeumorphismUI" /* NeumorphismUI */;
-			targetProxy = DAB7E9DE23FF262C005D4DF5 /* PBXContainerItemProxy */;
+			target = DAB7EA1B24004173005D4DF5 /* NeumorphismUI */;
+			targetProxy = DAB7EA7E24018179005D4DF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		DAB7EA75240180D0005D4DF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB7EA76240180D0005D4DF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		DAB7E9F724003E8F005D4DF5 /* Debug */ = {
+		DAB7EA2E24004173005D4DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -374,15 +390,15 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = A93B2TPWBT;
-				ENABLE_PREVIEWS = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -393,30 +409,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Demo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DAB7E9F824003E8F005D4DF5 /* Release */ = {
+		DAB7EA2F24004173005D4DF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -439,12 +453,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = A93B2TPWBT;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -454,265 +466,187 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Demo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAB7EA3124004173005D4DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NeumorphismUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.NeumorphismUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		OBJ_19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeumorphismUI.xcodeproj/NeumorphismUI_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NeumorphismUI;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = NeumorphismUI;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		OBJ_20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeumorphismUI.xcodeproj/NeumorphismUI_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NeumorphismUI;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = NeumorphismUI;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_26 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-					"DEBUG=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_37 /* Debug */ = {
+		DAB7EA3224004173005D4DF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NeumorphismUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeumorphismUI.xcodeproj/NeumorphismUITests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.NeumorphismUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGET_NAME = NeumorphismUITests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeumorphismUI.xcodeproj/NeumorphismUITests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = NeumorphismUITests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		OBJ_4 /* Release */ = {
+		DAB7EA3424004173005D4DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = NeumorphismUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"SWIFT_PACKAGE=1",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.NeumorphismUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAB7EA3524004173005D4DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = NeumorphismUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.NeumorphismUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAB7EA7A240180D0005D4DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAB7EA7B240180D0005D4DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAB7E9F624003E8F005D4DF5 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+		DAB7EA1624004173005D4DF5 /* Build configuration list for PBXProject "NeumorphismUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAB7E9F724003E8F005D4DF5 /* Debug */,
-				DAB7E9F824003E8F005D4DF5 /* Release */,
+				DAB7EA2E24004173005D4DF5 /* Debug */,
+				DAB7EA2F24004173005D4DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_18 /* Build configuration list for PBXNativeTarget "NeumorphismUI" */ = {
+		DAB7EA3024004173005D4DF5 /* Build configuration list for PBXNativeTarget "NeumorphismUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_19 /* Debug */,
-				OBJ_20 /* Release */,
+				DAB7EA3124004173005D4DF5 /* Debug */,
+				DAB7EA3224004173005D4DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "NeumorphismUI" */ = {
+		DAB7EA3324004173005D4DF5 /* Build configuration list for PBXNativeTarget "NeumorphismUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
+				DAB7EA3424004173005D4DF5 /* Debug */,
+				DAB7EA3524004173005D4DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_25 /* Build configuration list for PBXNativeTarget "NeumorphismUIPackageDescription" */ = {
+		DAB7EA79240180D0005D4DF5 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_26 /* Debug */,
-				OBJ_27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_31 /* Build configuration list for PBXAggregateTarget "NeumorphismUIPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_32 /* Debug */,
-				OBJ_33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_36 /* Build configuration list for PBXNativeTarget "NeumorphismUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_37 /* Debug */,
-				OBJ_38 /* Release */,
+				DAB7EA7A240180D0005D4DF5 /* Debug */,
+				DAB7EA7B240180D0005D4DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = OBJ_1 /* Project object */;
+	rootObject = DAB7EA1324004173005D4DF5 /* Project object */;
 }
