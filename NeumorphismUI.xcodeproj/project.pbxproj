@@ -19,6 +19,8 @@
 		DAB7EA77240180D0005D4DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA75240180D0005D4DF5 /* LaunchScreen.storyboard */; };
 		DAB7EA7C24018179005D4DF5 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; };
 		DAB7EA7D24018179005D4DF5 /* NeumorphismUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB9BD1E2404217800728215 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAB9BD1C2404217800728215 /* README.md */; };
+		DAB9BD202404218E00728215 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DAB9BD1F2404218E00728215 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		DAB7EA73240180D0005D4DF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAB7EA76240180D0005D4DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB7EA78240180D0005D4DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB9BD1C2404217800728215 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAB9BD1F2404218E00728215 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 		DAB7EA1224004173005D4DF5 = {
 			isa = PBXGroup;
 			children = (
+				DAB9BD1C2404217800728215 /* README.md */,
+				DAB9BD1F2404218E00728215 /* .gitignore */,
 				DAB7EA1E24004173005D4DF5 /* NeumorphismUI */,
 				DAB7EA2924004173005D4DF5 /* NeumorphismUITests */,
 				DAB7EA69240180CE005D4DF5 /* Demo */,
@@ -282,6 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB9BD202404218E00728215 /* .gitignore in Resources */,
+				DAB9BD1E2404217800728215 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
