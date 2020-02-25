@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		DAB7EA77240180D0005D4DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA75240180D0005D4DF5 /* LaunchScreen.storyboard */; };
 		DAB9BD1E2404217800728215 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAB9BD1C2404217800728215 /* README.md */; };
 		DAB9BD202404218E00728215 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DAB9BD1F2404218E00728215 /* .gitignore */; };
+		DABCFF2F24058E80007FE645 /* NeumorphismUI in Frameworks */ = {isa = PBXBuildFile; productRef = DABCFF2E24058E80007FE645 /* NeumorphismUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABCFF2F24058E80007FE645 /* NeumorphismUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +175,9 @@
 			dependencies = (
 			);
 			name = NeumorphismUI;
+			packageProductDependencies = (
+				DABCFF2E24058E80007FE645 /* NeumorphismUI */,
+			);
 			productName = NeumorphismUI;
 			productReference = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -243,6 +248,9 @@
 				Base,
 			);
 			mainGroup = DAB7EA1224004173005D4DF5;
+			packageReferences = (
+				DABCFF2D24058E80007FE645 /* XCRemoteSwiftPackageReference "NeumorphismUI" */,
+			);
 			productRefGroup = DAB7EA1D24004173005D4DF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -618,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DABCFF2D24058E80007FE645 /* XCRemoteSwiftPackageReference "NeumorphismUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tsuzukihashi/NeumorphismUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DABCFF2E24058E80007FE645 /* NeumorphismUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DABCFF2D24058E80007FE645 /* XCRemoteSwiftPackageReference "NeumorphismUI" */;
+			productName = NeumorphismUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAB7EA1324004173005D4DF5 /* Project object */;
 }
