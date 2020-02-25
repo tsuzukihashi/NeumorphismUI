@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(OSX 10.15, *)
 public extension Color {
     init(hex: String, opacity: Double = 1.0) {
         let v = Int(hex, radix: 16) ?? 0

@@ -2,6 +2,7 @@ import XCTest
 import SwiftUI
 @testable import NeumorphismUI
 
+@available(OSX 10.15, *)
 @available(iOS 13.0, *)
 final class NeumorphismUITests: XCTestCase {
     var color: Color!

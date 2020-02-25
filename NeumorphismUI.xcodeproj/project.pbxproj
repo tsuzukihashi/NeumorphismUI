@@ -10,15 +10,12 @@
 		DAB7EA2624004173005D4DF5 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; };
 		DAB7EA2B24004173005D4DF5 /* NeumorphismUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA2A24004173005D4DF5 /* NeumorphismUITests.swift */; };
 		DAB7EA2D24004173005D4DF5 /* NeumorphismUI.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB7EA1F24004173005D4DF5 /* NeumorphismUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAB7EA372400A51B005D4DF5 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA362400A51B005D4DF5 /* Color+.swift */; };
 		DAB7EA6B240180CE005D4DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA6A240180CE005D4DF5 /* AppDelegate.swift */; };
 		DAB7EA6D240180CE005D4DF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA6C240180CE005D4DF5 /* SceneDelegate.swift */; };
 		DAB7EA6F240180CE005D4DF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7EA6E240180CE005D4DF5 /* ContentView.swift */; };
 		DAB7EA71240180D0005D4DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA70240180D0005D4DF5 /* Assets.xcassets */; };
 		DAB7EA74240180D0005D4DF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA73240180D0005D4DF5 /* Preview Assets.xcassets */; };
 		DAB7EA77240180D0005D4DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7EA75240180D0005D4DF5 /* LaunchScreen.storyboard */; };
-		DAB7EA7C24018179005D4DF5 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; };
-		DAB7EA7D24018179005D4DF5 /* NeumorphismUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB9BD1E2404217800728215 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAB9BD1C2404217800728215 /* README.md */; };
 		DAB9BD202404218E00728215 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DAB9BD1F2404218E00728215 /* .gitignore */; };
 /* End PBXBuildFile section */
@@ -31,28 +28,7 @@
 			remoteGlobalIDString = DAB7EA1B24004173005D4DF5;
 			remoteInfo = NeumorphismUI;
 		};
-		DAB7EA7E24018179005D4DF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAB7EA1324004173005D4DF5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DAB7EA1B24004173005D4DF5;
-			remoteInfo = NeumorphismUI;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DAB7EA8024018179005D4DF5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DAB7EA7D24018179005D4DF5 /* NeumorphismUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DAB7EA1C24004173005D4DF5 /* NeumorphismUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeumorphismUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +37,6 @@
 		DAB7EA2524004173005D4DF5 /* NeumorphismUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeumorphismUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB7EA2A24004173005D4DF5 /* NeumorphismUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismUITests.swift; sourceTree = "<group>"; };
 		DAB7EA2C24004173005D4DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAB7EA362400A51B005D4DF5 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		DAB7EA68240180CE005D4DF5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB7EA6A240180CE005D4DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB7EA6C240180CE005D4DF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB7EA7C24018179005D4DF5 /* NeumorphismUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				DAB7EA1F24004173005D4DF5 /* NeumorphismUI.h */,
-				DAB7EA362400A51B005D4DF5 /* Color+.swift */,
 				DAB7EA2024004173005D4DF5 /* Info.plist */,
 			);
 			path = NeumorphismUI;
@@ -229,12 +202,10 @@
 				DAB7EA64240180CE005D4DF5 /* Sources */,
 				DAB7EA65240180CE005D4DF5 /* Frameworks */,
 				DAB7EA66240180CE005D4DF5 /* Resources */,
-				DAB7EA8024018179005D4DF5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DAB7EA7F24018179005D4DF5 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -317,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB7EA372400A51B005D4DF5 /* Color+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,11 +316,6 @@
 			isa = PBXTargetDependency;
 			target = DAB7EA1B24004173005D4DF5 /* NeumorphismUI */;
 			targetProxy = DAB7EA2724004173005D4DF5 /* PBXContainerItemProxy */;
-		};
-		DAB7EA7F24018179005D4DF5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DAB7EA1B24004173005D4DF5 /* NeumorphismUI */;
-			targetProxy = DAB7EA7E24018179005D4DF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -540,7 +505,6 @@
 		DAB7EA3424004173005D4DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				INFOPLIST_FILE = NeumorphismUITests/Info.plist;
@@ -559,7 +523,6 @@
 		DAB7EA3524004173005D4DF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				INFOPLIST_FILE = NeumorphismUITests/Info.plist;
