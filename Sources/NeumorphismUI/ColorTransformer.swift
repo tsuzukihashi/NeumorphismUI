@@ -1,13 +1,5 @@
 
 internal enum ColorTransformer {
-    
-    static func hsbToHsl(
-        h: Double, s: Double, b: Double
-    ) -> (h: Double, s: Double, l: Double) {
-        let (r, g, b) = hsbToRgb(h: h, s: s, b: b)
-        return Self.rgbToHsl(r: r, g: g, b: b)
-    }
-    
     static func hslToHsb(
         h: Double, s: Double, l: Double
     ) -> (h: Double, s: Double, b: Double) {
@@ -93,31 +85,7 @@ internal enum ColorTransformer {
         if s.isNaN { s = 0 }
         return (h/360, s/255, maxVal/255)
     }
-    
-    static func hsbToRgb(
-        h: Double, s: Double, b: Double
-    ) -> (r: Double, g: Double, b: Double) {
-        let (h, s, b) = (h*360, s*255, b*255)
-        
-        let max = b
-        let min = max - ((s / 255) * max)
-        
-        func f(_ value: Double) -> Double {
-            (value / 60) * (max - min) + min
-        }
-        
-        let rgb: (Double, Double, Double)
-        switch h {
-        case 0...60:          rgb = (max,        f(h),       min)
-        case 60...120:        rgb = (f(120 - h), max,        min)
-        case 120...180:       rgb = (min,        max,        f(h - 120))
-        case 180...240:       rgb = (min,        f(240 - h), max)
-        case 240...300:       rgb = (f(h - 240), min,        max)
-        default/*300...360*/: rgb = (max,        min,        f(360 - h))
-        }
-        return (rgb.0 / 255, rgb.1 / 255, rgb.2 / 255)
-    }
-    
+
     private static func getHFromRGB(r: Double, g: Double, b: Double) -> Double {
         if r == g, g == b { return 0 }
         
