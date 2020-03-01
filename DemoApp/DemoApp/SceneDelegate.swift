@@ -6,7 +6,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // Set baseColor
         let contentView = ContentView()
+            .environment(\.baseColor,Color(hex: "C1D2EB"))
+        
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
