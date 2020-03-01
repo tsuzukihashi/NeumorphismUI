@@ -2,7 +2,7 @@ import SwiftUI
 
 public struct BaseColor: EnvironmentKey {
     @available(iOS 13.0, *)
-    public static let defaultValue: Color = Color(hex: "EFEEEE")
+    public static let defaultValue: Color = Color("EFEEEE")
 }
 
 @available(iOS 13.0, *)
