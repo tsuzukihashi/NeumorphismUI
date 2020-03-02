@@ -3,16 +3,37 @@ import NeumorphismUI
 
 struct ContentView: View {
     @Environment(\.baseColor) var baseColor: Color
-    
+    @State var isSelected = false
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 self.baseColor.edgesIgnoringSafeArea(.all)
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack {
+                        
+                        
                         Text("NeumorphismUI DemoApp")
                             .font(.title)
                             .foregroundColor(self.baseColor.darkerColor())
+                        
+                        NeumorphismButton(action: {
+                            self.isSelected.toggle()
+                        }) { isHeighlight in
+                            Image(systemName: isHeighlight ? "heart.fill" : "heart")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:60, height: 60)
+                                .foregroundColor(self.baseColor.darkerColor())
+                                .background(
+                                    Circle()
+                                        .fill(self.baseColor)
+                                        .frame(width: 100, height: 100)
+                                        .neumorphismShadow()
+                                        .opacity(isHeighlight ? 0.1 : 1)
+                                        .animation(.spring())
+                            )
+                            .padding()
+                        }
                         
                         Circle()
                             .fill(self.baseColor)

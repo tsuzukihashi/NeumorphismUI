@@ -1,0 +1,31 @@
+import SwiftUI
+
+@available(iOS 13.0.0, *)
+public struct NeumorphismButton<Label>: View where Label: View {
+    @State private var isSelected = false
+    
+    private let action: () -> Void
+    private let label: (Bool) -> Label
+    
+    public init(action: @escaping () -> Void, label: @escaping (Bool) -> Label) {
+        self.action = action
+        self.label = label
+    }
+    
+    public var body: some View {
+        label(isSelected)
+            .gesture(
+                DragGesture(minimumDistance: 0.0)
+                    .onChanged { _ in
+                        withAnimation {
+                            self.isSelected = true
+                        }}
+                    .onEnded { _ in
+                        self.action()
+                        withAnimation {
+                            self.isSelected = false
+                        }})
+            .animation(Animation.easeIn(duration: 0.05))
+        
+    }
+}
