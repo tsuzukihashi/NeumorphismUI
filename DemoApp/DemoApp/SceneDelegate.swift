@@ -7,6 +7,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Set baseColor
+        // baseColor: C1D2EB
+        // like dark mode color: 2C292C
         let contentView = ContentView()
             .environment(\.baseColor,Color(hex: "C1D2EB"))
         

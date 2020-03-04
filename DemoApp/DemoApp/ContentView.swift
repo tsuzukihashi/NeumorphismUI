@@ -4,6 +4,8 @@ import NeumorphismUI
 struct ContentView: View {
     @Environment(\.baseColor) var baseColor: Color
     @State var isSelected = false
+    @State var isSelectedBox = false
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -19,7 +21,7 @@ struct ContentView: View {
                         NeumorphismButton(action: {
                             self.isSelected.toggle()
                         }) { isHeighlight in
-                            Image(systemName: isHeighlight ? "heart.fill" : "heart")
+                            Image(systemName: self.isSelected ? "heart.fill" : "heart")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width:60, height: 60)
@@ -28,12 +30,34 @@ struct ContentView: View {
                                     Circle()
                                         .fill(self.baseColor)
                                         .frame(width: 100, height: 100)
-                                        .neumorphismShadow()
-                                        .opacity(isHeighlight ? 0.1 : 1)
-                                        .animation(.spring())
+                                        .modifier(NeumorphismShadowModifier(isAnimation: isHeighlight))
+                                    
                             )
-                            .padding()
+                                .padding()
+                                .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
                         }
+                        .padding()
+                        
+                        NeumorphismButton(action: {
+                            self.isSelectedBox.toggle()
+                        }) { isHeighlight in
+                            
+                            Image(systemName: self.isSelectedBox ? "heart.fill" : "heart")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:60, height: 60)
+                                .foregroundColor(self.baseColor.darkerColor())
+                                .background(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .fill(self.baseColor)
+                                        .frame(width: 100, height: 100)
+                                        .modifier(NeumorphismShadowModifier(isAnimation: isHeighlight))
+                            )
+                                .padding()
+                                .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
+                            
+                        }
+                        .padding()
                         
                         Circle()
                             .fill(self.baseColor)
