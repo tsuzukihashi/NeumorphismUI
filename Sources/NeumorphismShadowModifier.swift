@@ -2,8 +2,8 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct NeumorphismShadowModifier: ViewModifier {
-    @Environment(\.baseColor) private var baseColor: Color
-    
+    @EnvironmentObject var neumorphism: Neumorphism
+
     private let darkShadowColor: Color?
     private let lightShadowColor: Color?
     
@@ -29,13 +29,12 @@ public struct NeumorphismShadowModifier: ViewModifier {
     public func body(content: Content) -> some View {
         content
             .shadow(
-                color: darkShadowColor ?? baseColor.darkerColor(),
+                color: darkShadowColor ?? neumorphism.color.darkerColor(),
                 radius: radius, x: x, y: y
         )
             .shadow(
-                color: lightShadowColor ?? baseColor.lighterColor(),
+                color: lightShadowColor ?? neumorphism.color.lighterColor(),
                 radius: radius, x: -x, y: -y
         )
-
     }
 }

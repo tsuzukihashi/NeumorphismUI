@@ -1,16 +1,20 @@
 import UIKit
 import SwiftUI
+import NeumorphismUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Set baseColor
-        // baseColor: C1D2EB
-        // like dark mode color: 2C292C
+        let neumorphism = Neumorphism(
+            isDark: true,
+            lightColor: Color(hex: "C1D2EB"),
+            darkColor: Color(hex: "2C292C")
+        )
+        
         let contentView = ContentView()
-            .environment(\.baseColor,Color(hex: "C1D2EB"))
+            .environmentObject(neumorphism)
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

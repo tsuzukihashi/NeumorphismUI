@@ -21,17 +21,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		DA954C76240E8E5D0052B8FF /* NeumorphismShadowInversionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA954C75240E8E5D0052B8FF /* NeumorphismShadowInversionModifier.swift */; };
+		DA954C782411D9740052B8FF /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA954C772411D9740052B8FF /* UserSettings.swift */; };
 		DA98731B240BDE7D0083EB5E /* NeumorphismButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98731A240BDE7D0083EB5E /* NeumorphismButton.swift */; };
-		OBJ_29 /* BaseColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* BaseColor.swift */; };
 		OBJ_30 /* ColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ColorTransformer.swift */; };
 		OBJ_31 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ColorExtension.swift */; };
 		OBJ_32 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ViewExtension.swift */; };
 		OBJ_33 /* NeumorphismShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* NeumorphismShadowModifier.swift */; };
 		OBJ_40 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_51 /* ColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* ColorExtensionsTests.swift */; };
-		OBJ_52 /* NeumorphismUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* NeumorphismUITests.swift */; };
-		OBJ_53 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* XCTestManifests.swift */; };
 		OBJ_55 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +51,7 @@
 
 /* Begin PBXFileReference section */
 		DA1A6B5F240B76D9001EA5EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		DA954C75240E8E5D0052B8FF /* NeumorphismShadowInversionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismShadowInversionModifier.swift; sourceTree = "<group>"; };
+		DA954C772411D9740052B8FF /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		DA98731A240BDE7D0083EB5E /* NeumorphismButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButton.swift; sourceTree = "<group>"; };
 		"NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NeumorphismUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"NeumorphismUI::NeumorphismUITests::Product" /* NeumorphismUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeumorphismUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,12 +59,9 @@
 		OBJ_12 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		OBJ_13 /* NeumorphismShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismShadowModifier.swift; sourceTree = "<group>"; };
 		OBJ_16 /* ColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensionsTests.swift; sourceTree = "<group>"; };
-		OBJ_17 /* NeumorphismUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismUITests.swift; sourceTree = "<group>"; };
-		OBJ_18 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* BaseColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseColor.swift; sourceTree = "<group>"; };
 		OBJ_9 /* ColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTransformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,8 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_16 /* ColorExtensionsTests.swift */,
-				OBJ_17 /* NeumorphismUITests.swift */,
-				OBJ_18 /* XCTestManifests.swift */,
 			);
 			path = NeumorphismUITests;
 			sourceTree = "<group>";
@@ -150,10 +142,9 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* BaseColor.swift */,
+				DA954C772411D9740052B8FF /* UserSettings.swift */,
 				OBJ_9 /* ColorTransformer.swift */,
 				OBJ_13 /* NeumorphismShadowModifier.swift */,
-				DA954C75240E8E5D0052B8FF /* NeumorphismShadowInversionModifier.swift */,
 				DA987319240BDE580083EB5E /* CustomViews */,
 				OBJ_10 /* Extensions */,
 			);
@@ -244,11 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_29 /* BaseColor.swift in Sources */,
 				OBJ_30 /* ColorTransformer.swift in Sources */,
 				OBJ_31 /* ColorExtension.swift in Sources */,
 				DA98731B240BDE7D0083EB5E /* NeumorphismButton.swift in Sources */,
-				DA954C76240E8E5D0052B8FF /* NeumorphismShadowInversionModifier.swift in Sources */,
+				DA954C782411D9740052B8FF /* UserSettings.swift in Sources */,
 				OBJ_32 /* ViewExtension.swift in Sources */,
 				OBJ_33 /* NeumorphismShadowModifier.swift in Sources */,
 			);
@@ -267,8 +257,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_51 /* ColorExtensionsTests.swift in Sources */,
-				OBJ_52 /* NeumorphismUITests.swift in Sources */,
-				OBJ_53 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

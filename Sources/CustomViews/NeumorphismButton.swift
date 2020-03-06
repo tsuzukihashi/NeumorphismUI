@@ -2,7 +2,7 @@ import SwiftUI
 
 @available(iOS 13.0.0, *)
 public struct NeumorphismButton<Label>: View where Label: View {
-    @State private var isSelected = false
+    @State private var isHighlighted = false
     
     private let action: () -> Void
     private let label: (Bool) -> Label
@@ -13,19 +13,18 @@ public struct NeumorphismButton<Label>: View where Label: View {
     }
     
     public var body: some View {
-        label(isSelected)
+        label(isHighlighted)
             .gesture(
                 DragGesture(minimumDistance: 0.0)
                     .onChanged { _ in
                         withAnimation {
-                            self.isSelected = true
+                            self.isHighlighted = true
                         }}
                     .onEnded { _ in
                         self.action()
                         withAnimation {
-                            self.isSelected = false
+                            self.isHighlighted = false
                         }})
             .animation(Animation.easeIn(duration: 0.05))
-        
     }
 }
