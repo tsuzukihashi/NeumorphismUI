@@ -2,7 +2,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct NeumorphismShadowModifier: ViewModifier {
-    @EnvironmentObject var neumorphism: Neumorphism
+    @EnvironmentObject var neumorphism: NeumorphismManager
 
     private let darkShadowColor: Color?
     private let lightShadowColor: Color?
