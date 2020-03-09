@@ -1,14 +1,24 @@
 import SwiftUI
-import NeumorphismUI
 
-struct NeumorphismCricleButton: View {
+@available(iOS 13.0.0, *)
+public struct NeumorphismCricleButton: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     @State var isSelected = false
     
-    var body: some View {
-        NeumorphismButton(action: {
+    private var width: CGFloat
+    private var height: CGFloat
+    private var handler: (() -> Void)?
+
+    public init(width: CGFloat = 100, height: CGFloat = 100, handler: (() -> Void)? = nil) {
+        self.width = width
+        self.height = height
+        self.handler = handler
+    }
+    
+    public var body: some View {
+        HighlightableButton(action: {
             self.isSelected.toggle()
-            self.neumorphism.changeMode()
+            self.handler?()
         }) { isHeighlight in
             Image(systemName: self.isSelected ? "heart.fill" : "heart")
                 .resizable()
@@ -26,17 +36,5 @@ struct NeumorphismCricleButton: View {
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
         }
         .padding()
-    }
-}
-
-struct NeumorphismCricleButton_Previews: PreviewProvider {
-    static let neumorphism = NeumorphismManager(
-         isDark: false,
-         lightColor: Color(hex: "C1D2EB"),
-         darkColor: Color(hex: "2C292C")
-     )
-    static var previews: some View {
-        NeumorphismCricleButton()
-            .environmentObject(neumorphism)
     }
 }

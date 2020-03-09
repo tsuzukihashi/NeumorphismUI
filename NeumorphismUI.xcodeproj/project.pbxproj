@@ -21,10 +21,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		DA5AFAC9241691210098E0BB /* NeumorphismCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFAC8241691210098E0BB /* NeumorphismCircleButton.swift */; };
 		DA90AF652412D01900E759A9 /* NeumorphismManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90AF642412D01900E759A9 /* NeumorphismManagerTests.swift */; };
 		DA90AF682412D0EE00E759A9 /* NeumorphismManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90AF672412D0EE00E759A9 /* NeumorphismManagerMock.swift */; };
 		DA954C782411D9740052B8FF /* NeumorphismManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA954C772411D9740052B8FF /* NeumorphismManager.swift */; };
-		DA98731B240BDE7D0083EB5E /* NeumorphismButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98731A240BDE7D0083EB5E /* NeumorphismButton.swift */; };
+		DA98731B240BDE7D0083EB5E /* HighlightableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98731A240BDE7D0083EB5E /* HighlightableButton.swift */; };
 		OBJ_30 /* ColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ColorTransformer.swift */; };
 		OBJ_31 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ColorExtension.swift */; };
 		OBJ_32 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ViewExtension.swift */; };
@@ -53,10 +54,11 @@
 
 /* Begin PBXFileReference section */
 		DA1A6B5F240B76D9001EA5EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DA5AFAC8241691210098E0BB /* NeumorphismCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismCircleButton.swift; sourceTree = "<group>"; };
 		DA90AF642412D01900E759A9 /* NeumorphismManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismManagerTests.swift; sourceTree = "<group>"; };
 		DA90AF672412D0EE00E759A9 /* NeumorphismManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismManagerMock.swift; sourceTree = "<group>"; };
 		DA954C772411D9740052B8FF /* NeumorphismManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismManager.swift; sourceTree = "<group>"; };
-		DA98731A240BDE7D0083EB5E /* NeumorphismButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButton.swift; sourceTree = "<group>"; };
+		DA98731A240BDE7D0083EB5E /* HighlightableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightableButton.swift; sourceTree = "<group>"; };
 		"NeumorphismUI::NeumorphismUI::Product" /* NeumorphismUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NeumorphismUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"NeumorphismUI::NeumorphismUITests::Product" /* NeumorphismUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeumorphismUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -99,7 +101,8 @@
 		DA987319240BDE580083EB5E /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				DA98731A240BDE7D0083EB5E /* NeumorphismButton.swift */,
+				DA98731A240BDE7D0083EB5E /* HighlightableButton.swift */,
+				DA5AFAC8241691210098E0BB /* NeumorphismCircleButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -251,9 +254,10 @@
 			files = (
 				OBJ_30 /* ColorTransformer.swift in Sources */,
 				OBJ_31 /* ColorExtension.swift in Sources */,
-				DA98731B240BDE7D0083EB5E /* NeumorphismButton.swift in Sources */,
+				DA98731B240BDE7D0083EB5E /* HighlightableButton.swift in Sources */,
 				DA90AF682412D0EE00E759A9 /* NeumorphismManagerMock.swift in Sources */,
 				DA954C782411D9740052B8FF /* NeumorphismManager.swift in Sources */,
+				DA5AFAC9241691210098E0BB /* NeumorphismCircleButton.swift in Sources */,
 				OBJ_32 /* ViewExtension.swift in Sources */,
 				OBJ_33 /* NeumorphismShadowModifier.swift in Sources */,
 			);

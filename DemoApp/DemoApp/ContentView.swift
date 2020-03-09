@@ -17,7 +17,9 @@ struct ContentView: View {
                             .font(.title)
                             .foregroundColor(self.neumorphism.color.darkerColor())
                         
-                        NeumorphismCricleButton()
+                        NeumorphismCricleButton() {
+                            self.neumorphism.changeMode()
+                        }
                         
                         NeumorphismRoundedRectangleButton()
                         

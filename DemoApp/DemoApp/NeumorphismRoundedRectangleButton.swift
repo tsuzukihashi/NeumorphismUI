@@ -6,7 +6,7 @@ struct NeumorphismRoundedRectangleButton: View {
     @State var isSelectedBox = false
     
     var body: some View {
-        NeumorphismButton(action: {
+        HighlightableButton(action: {
             self.isSelectedBox.toggle()
         }) { isHeighlight in
             Image(systemName: self.isSelectedBox ? "heart.fill" : "heart")
