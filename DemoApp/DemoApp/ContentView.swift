@@ -17,11 +17,11 @@ struct ContentView: View {
                             .font(.title)
                             .foregroundColor(self.neumorphism.color.darkerColor())
                         
-                        NeumorphismCricleButton() {
+                        NeumorphismButton() {
                             self.neumorphism.changeMode()
                         }
                         
-                        NeumorphismRoundedRectangleButton()
+                        NeumorphismButton(normalImage: Image(systemName: "star"), selectedImage: Image(systemName: "star.fill"))
                         
                         Circle()
                             .fill(self.neumorphism.color)
