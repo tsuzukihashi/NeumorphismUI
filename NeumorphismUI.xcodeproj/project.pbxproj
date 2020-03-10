@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		DA5AFAC9241691210098E0BB /* NeumorphismButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFAC8241691210098E0BB /* NeumorphismButton.swift */; };
+		DA5AFACD2418332A0098E0BB /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFACC2418332A0098E0BB /* ShapeType.swift */; };
+		DA5AFACF241833430098E0BB /* AnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFACE241833430098E0BB /* AnyShape.swift */; };
 		DA90AF652412D01900E759A9 /* NeumorphismManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90AF642412D01900E759A9 /* NeumorphismManagerTests.swift */; };
 		DA90AF682412D0EE00E759A9 /* NeumorphismManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90AF672412D0EE00E759A9 /* NeumorphismManagerMock.swift */; };
 		DA954C782411D9740052B8FF /* NeumorphismManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA954C772411D9740052B8FF /* NeumorphismManager.swift */; };
@@ -55,6 +57,8 @@
 /* Begin PBXFileReference section */
 		DA1A6B5F240B76D9001EA5EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA5AFAC8241691210098E0BB /* NeumorphismButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButton.swift; sourceTree = "<group>"; };
+		DA5AFACC2418332A0098E0BB /* ShapeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
+		DA5AFACE241833430098E0BB /* AnyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyShape.swift; sourceTree = "<group>"; };
 		DA90AF642412D01900E759A9 /* NeumorphismManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismManagerTests.swift; sourceTree = "<group>"; };
 		DA90AF672412D0EE00E759A9 /* NeumorphismManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismManagerMock.swift; sourceTree = "<group>"; };
 		DA954C772411D9740052B8FF /* NeumorphismManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismManager.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				DA954C772411D9740052B8FF /* NeumorphismManager.swift */,
 				OBJ_9 /* ColorTransformer.swift */,
 				OBJ_13 /* NeumorphismShadowModifier.swift */,
+				DA5AFACE241833430098E0BB /* AnyShape.swift */,
+				DA5AFACC2418332A0098E0BB /* ShapeType.swift */,
 				DA987319240BDE580083EB5E /* CustomViews */,
 				OBJ_10 /* Extensions */,
 			);
@@ -258,8 +264,10 @@
 				DA90AF682412D0EE00E759A9 /* NeumorphismManagerMock.swift in Sources */,
 				DA954C782411D9740052B8FF /* NeumorphismManager.swift in Sources */,
 				DA5AFAC9241691210098E0BB /* NeumorphismButton.swift in Sources */,
+				DA5AFACD2418332A0098E0BB /* ShapeType.swift in Sources */,
 				OBJ_32 /* ViewExtension.swift in Sources */,
 				OBJ_33 /* NeumorphismShadowModifier.swift in Sources */,
+				DA5AFACF241833430098E0BB /* AnyShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

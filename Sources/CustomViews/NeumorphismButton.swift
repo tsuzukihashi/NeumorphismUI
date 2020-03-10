@@ -4,7 +4,8 @@ import SwiftUI
 public struct NeumorphismButton: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     @State var isSelected = false
-
+    
+    private var shapeType: ShapeType
     private var normalImage: Image
     private var selectedImage: Image
     private var width: CGFloat
@@ -12,9 +13,10 @@ public struct NeumorphismButton: View {
     private var imageWidth: CGFloat
     private var imageHeight: CGFloat
     private var handler: (() -> Void)?
-
+    
     public init
         (
+        shapeType: ShapeType = .circle,
         normalImage: Image = Image(systemName: "heart"),
         selectedImage: Image = Image(systemName: "heart.fill"),
         width: CGFloat = 100,
@@ -23,6 +25,7 @@ public struct NeumorphismButton: View {
         imageHeight: CGFloat = 60,
         handler: (() -> Void)? = nil
     ) {
+        self.shapeType = shapeType
         self.normalImage = normalImage
         self.selectedImage = selectedImage
         self.width = width
@@ -43,8 +46,9 @@ public struct NeumorphismButton: View {
                 .frame(width:self.imageWidth, height: self.imageWidth)
                 .foregroundColor(self.neumorphism.color.darkerColor())
                 .background(
-                    Circle()
-                        .fill(self.neumorphism.color)
+                    Rectangle()
+                        .clipShape(self.getAnyShape(type: self.shapeType))
+                        .foregroundColor(self.neumorphism.color)
                         .frame(width: self.width, height: self.height)
                         .modifier(NeumorphismShadowModifier(isAnimation: isHeighlight))
             )
@@ -53,4 +57,20 @@ public struct NeumorphismButton: View {
         }
         .padding()
     }
+    
+    public func getAnyShape(type: ShapeType) -> AnyShape {
+        switch type {
+        case .rectangle:
+            return AnyShape(Rectangle())
+        case .roundedRectangle(let cornerRadius):
+            return AnyShape(RoundedRectangle(cornerRadius: cornerRadius))
+        case .capsule:
+            return AnyShape(Capsule(style: .circular))
+        case .ellipse:
+            return AnyShape(Ellipse())
+        case .circle:
+            return AnyShape(Circle())
+        }
+    }
 }
+
