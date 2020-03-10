@@ -3,9 +3,6 @@ import NeumorphismUI
 
 struct ContentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
-
-    @State var isSelected = false
-    @State var isSelectedBox = false
     
     var body: some View {
         GeometryReader { geometry in
