@@ -94,6 +94,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA5AFAD0241834A70098E0BB /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* NeumorphismShadowModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		DA5AFAD1241834D20098E0BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* ColorTransformer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		DA90AF662412D0C100E759A9 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,12 +180,12 @@
 			isa = PBXGroup;
 			children = (
 				DA954C772411D9740052B8FF /* NeumorphismManager.swift */,
-				OBJ_9 /* ColorTransformer.swift */,
-				OBJ_13 /* NeumorphismShadowModifier.swift */,
 				DA5AFACE241833430098E0BB /* AnyShape.swift */,
 				DA5AFACC2418332A0098E0BB /* ShapeType.swift */,
 				DA987319240BDE580083EB5E /* CustomViews */,
 				OBJ_10 /* Extensions */,
+				DA5AFAD0241834A70098E0BB /* Modifier */,
+				DA5AFAD1241834D20098E0BB /* Utils */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
