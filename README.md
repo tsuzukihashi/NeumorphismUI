@@ -1,9 +1,19 @@
 # NeumorphismUI
 
-A description of this package.
+NeumorphismUI is a very useful library that allows you to easily use Neumorphism designs in SwiftUI.
+
+## Requirements
+
++ iOS 13.0+
++ Xcode 11+
++ Swift  5+
+
+## Installation
+
+### Swift Package Manager
 
 
-## How to use
+## Usage
 
 ```swift
 let neumorphism = NeumorphismManager(
