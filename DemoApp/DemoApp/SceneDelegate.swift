@@ -8,7 +8,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let neumorphism = NeumorphismManager(
-            isDark: false,
             lightColor: Color(hex: "C1D2EB"),
             darkColor: Color(hex: "2C292C")
         )
