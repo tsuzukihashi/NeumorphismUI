@@ -51,7 +51,6 @@ public struct NeumorphismLabelButton: View {
             }
             .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
         }
-        .padding()
     }
 }
 
