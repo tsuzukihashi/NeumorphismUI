@@ -14,7 +14,7 @@ struct ContentView: View {
                             
                             Text("NeumorphismUI DemoApp")
                                 .font(.title)
-                                .foregroundColor(self.neumorphism.color.darkerColor())
+                                .foregroundColor(self.neumorphism.fontColor(lightColor: Color(hex: "CBCDD9"), darkColor: Color(hex: "332C58")))
                             
                             RoundedRectangle(cornerRadius: 1)
                                 .fill(self.neumorphism.color.darkerColor())
@@ -73,6 +73,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static let neumorphism = NeumorphismManager(
+        isDark: true,
         lightColor: Color(hex: "C1D2EB"),
         darkColor: Color(hex: "2C292C")
     )
