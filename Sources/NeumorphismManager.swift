@@ -1,7 +1,9 @@
 import SwiftUI
 
+@available(iOS 13.0, *)
 public protocol NeumorphismManagable {
     func changeMode()
+    func fontColor(lightColor: Color?, darkColor: Color?) -> Color
 }
 
 @available(iOS 13.0, *)
@@ -27,6 +29,14 @@ public class NeumorphismManager: NeumorphismManagable, ObservableObject {
         } else {
             color = lightColor
             UserDefaults.standard.set(false, forKey: "isDark")
+        }
+    }
+    
+    public func fontColor(lightColor: Color?, darkColor: Color?) -> Color {
+        if isDark {
+            return lightColor ?? self.lightColor
+        } else {
+            return darkColor ?? self.darkColor
         }
     }
 }
