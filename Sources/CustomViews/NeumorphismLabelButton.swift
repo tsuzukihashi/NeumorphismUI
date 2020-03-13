@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0.0, *)
-struct NeumorphismLabelButton: View {
+public struct NeumorphismLabelButton: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     @State var isSelected = false
     private var text: String
