@@ -55,7 +55,6 @@ public struct NeumorphismButton: View {
                 .padding()
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
         }
-        .padding()
     }
     
     public func getAnyShape(type: ShapeType) -> AnyShape {
