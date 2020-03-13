@@ -47,7 +47,7 @@ public struct NeumorphismLabelButton: View {
                 Text(self.text)
                     .font(self.font ?? .title)
                     .foregroundColor(
-                        isHeighlight ? self.color?.darkerColor() ?? self.neumorphism.color.darkerColor().darkerColor() : self.color ?? self.neumorphism.color.darkerColor())
+                        isHeighlight ? self.color?.darkerColor() ?? self.neumorphism.fontColor() : self.color ?? self.neumorphism.fontColor())
             }
             .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
         }

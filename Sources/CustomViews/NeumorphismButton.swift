@@ -44,7 +44,7 @@ public struct NeumorphismButton: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width:self.imageWidth, height: self.imageWidth)
-                .foregroundColor(self.neumorphism.color.darkerColor())
+                .foregroundColor(self.neumorphism.fontColor())
                 .background(
                     Rectangle()
                         .clipShape(self.getAnyShape(type: self.shapeType))

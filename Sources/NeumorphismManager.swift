@@ -34,9 +34,9 @@ public class NeumorphismManager: NeumorphismManagable, ObservableObject {
     
     public func fontColor(lightColor: Color? = nil, darkColor: Color? = nil) -> Color {
         if isDark {
-            return lightColor ?? self.color.lighterColor()
+            return lightColor ?? self.color.lighterColor().lighterColor().lighterColor().lighterColor()
         } else {
-            return darkColor ?? self.color.darkerColor()
+            return darkColor ?? self.color.darkerColor().darkerColor().darkerColor()
         }
     }
 }
