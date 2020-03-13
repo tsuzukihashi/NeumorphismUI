@@ -3,6 +3,7 @@ import NeumorphismUI
 
 struct ContentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
+    @State private var isSelected: Bool = false
     @State private var isManager: Bool = false
     var body: some View {
         GeometryReader { geometry in
@@ -20,7 +21,7 @@ struct ContentView: View {
                                 .fill(self.neumorphism.color.darkerColor())
                                 .frame(width: 365, height: 1)
                             
-                            NeumorphismButton(shapeType: .circle, normalImage: Image(systemName: "book"), selectedImage: Image(systemName: "book.fill"), width: 48, height: 48, imageWidth: 24, imageHeight: 24, shadowRadius: 4) {
+                            NeumorphismBindingButton(isSelected: self.$isSelected, shapeType: .circle, normalImage: Image(systemName: "book"), selectedImage: Image(systemName: "book.fill"), width: 48, height: 48, imageWidth: 24, imageHeight: 24, shadowRadius: 4) {
                                 
                             }
                             .padding()
