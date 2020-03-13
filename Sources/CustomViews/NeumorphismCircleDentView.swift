@@ -9,8 +9,7 @@ public struct NeumorphismCircleDentView: View {
     
     public init(
         width: CGFloat = 100,
-        height: CGFloat = 100,
-        cornerRadius: CGFloat = 16
+        height: CGFloat = 100
     ) {
         self.width = width
         self.height = height
