@@ -57,13 +57,7 @@ struct ContentView: View {
                         }
                         
                         Circle()
-                            .stroke(self.neumorphism.color, lineWidth: 16)
-                            .neumorphismShadow()
-                            .frame(width: 200, height: 200)
-                            .padding()
-                        
-                        Circle()
-                            .stroke(self.neumorphism.color, style: StrokeStyle(lineWidth: 16, lineCap: .round, lineJoin: .round, dash: [0.1, 12], dashPhase: 16))
+                            .stroke(self.neumorphism.color, style: StrokeStyle(lineWidth: 16, lineCap: .round, lineJoin: .round, dash: [8, 24], dashPhase: 16))
                             .neumorphismShadow()
                             .frame(width: 200, height: 200)
                             .padding()

@@ -53,7 +53,7 @@ public struct NeumorphismButton: View {
                         .clipShape(getAnyShape(type: self.shapeType))
                         .foregroundColor(self.neumorphism.color)
                         .frame(width: self.width, height: self.height)
-                        .modifier(NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight))
+                        .modifier(self.isSelected ? NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: self.isSelected ) : NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight))
             )
                 .padding()
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
