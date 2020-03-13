@@ -50,28 +50,13 @@ public struct NeumorphismButton: View {
                 .foregroundColor(self.neumorphism.fontColor())
                 .background(
                     Rectangle()
-                        .clipShape(self.getAnyShape(type: self.shapeType))
+                        .clipShape(getAnyShape(type: self.shapeType))
                         .foregroundColor(self.neumorphism.color)
                         .frame(width: self.width, height: self.height)
                         .modifier(NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight))
             )
                 .padding()
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
-        }
-    }
-    
-    public func getAnyShape(type: ShapeType) -> AnyShape {
-        switch type {
-        case .rectangle:
-            return AnyShape(Rectangle())
-        case .roundedRectangle(let cornerRadius):
-            return AnyShape(RoundedRectangle(cornerRadius: cornerRadius))
-        case .capsule:
-            return AnyShape(Capsule(style: .circular))
-        case .ellipse:
-            return AnyShape(Ellipse())
-        case .circle:
-            return AnyShape(Circle())
         }
     }
 }

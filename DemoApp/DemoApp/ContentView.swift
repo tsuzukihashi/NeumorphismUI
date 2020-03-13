@@ -3,7 +3,7 @@ import NeumorphismUI
 
 struct ContentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
-    
+    @State private var isManager: Bool = false
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -21,7 +21,7 @@ struct ContentView: View {
                                 .frame(width: 365, height: 1)
                             
                             NeumorphismButton(shapeType: .circle, normalImage: Image(systemName: "book"), selectedImage: Image(systemName: "book.fill"), width: 48, height: 48, imageWidth: 24, imageHeight: 24, shadowRadius: 4) {
-                
+                                
                             }
                             .padding()
                         }
@@ -42,13 +42,18 @@ struct ContentView: View {
                         }
                         
                         HStack {
-                            RoundedRectangle(cornerRadius: 16)
-                                .fill(self.neumorphism.color)
-                                .neumorphismShadow()
-                                .frame(width: 100, height: 80)
-                                .padding()
+                            Button(action: {
+                                self.isManager.toggle()
+                            }) {
+                                RoundedRectangle(cornerRadius: 16)
+                                    .fill(self.neumorphism.color)
+                                    .neumorphismShadow()
+                                    .frame(width: 100, height: 80)
+                            }
                             
                             NeumorphismDentView(width: 100, height: 80, cornerRadius: 16)
+                            
+                            
                         }
                         
                         Circle()
