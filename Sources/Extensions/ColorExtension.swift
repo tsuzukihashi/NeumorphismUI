@@ -17,6 +17,11 @@ public extension Color {
         self = Color(red: r, green: g, blue: b, opacity: opacity)
     }
     
+    func uiColor() -> UIColor {
+        let (r, g, b, a) = getRGBA()
+        return UIColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: CGFloat(a))
+    }
+    
     func getRGBA() -> (r: Double, g: Double, b: Double, a: Double) {
         let str = String(self.description.dropFirst())
         let value = Int(str, radix: 16) ?? 0

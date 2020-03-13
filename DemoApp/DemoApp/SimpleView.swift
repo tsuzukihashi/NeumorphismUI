@@ -13,6 +13,10 @@ struct SimpleView: View {
                 .neumorphismShadow()
         }
     }
+    
+    func test() {
+        print(UIColor())
+    }
 }
 
 struct SimpleView_Previews: PreviewProvider {
