@@ -11,7 +11,7 @@ public struct NeumorphismShadowModifier: ViewModifier {
     private let x: CGFloat
     private let y: CGFloat
     
-    public init(darkShadowColor: Color? = nil, lightShadowColor: Color? = nil, radius: CGFloat = 16, x: CGFloat = 9, y: CGFloat = 9, isAnimation: Bool = false) {
+    public init(darkShadowColor: Color? = nil, lightShadowColor: Color? = nil, radius: CGFloat = 8, x: CGFloat = 8, y: CGFloat = 8, isAnimation: Bool = false) {
         self.darkShadowColor = darkShadowColor
         self.lightShadowColor = lightShadowColor
         if isAnimation {
@@ -30,11 +30,13 @@ public struct NeumorphismShadowModifier: ViewModifier {
         content
             .shadow(
                 color: darkShadowColor ?? neumorphism.color.darkerColor(),
-                radius: radius, x: x, y: y
+                radius: radius,
+                x: x, y: y
         )
             .shadow(
                 color: lightShadowColor ?? neumorphism.color.lighterColor(),
-                radius: radius, x: -x, y: -y
+                radius: radius,
+                x: -x, y: -y
         )
     }
 }
