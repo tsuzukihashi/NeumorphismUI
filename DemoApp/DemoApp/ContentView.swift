@@ -62,7 +62,13 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let neumorphism = NeumorphismManager(
+        lightColor: Color(hex: "C1D2EB"),
+        darkColor: Color(hex: "2C292C")
+    )
+    
     static var previews: some View {
         ContentView()
+            .environmentObject(neumorphism)
     }
 }
