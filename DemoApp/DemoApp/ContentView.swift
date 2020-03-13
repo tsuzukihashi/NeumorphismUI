@@ -10,27 +10,39 @@ struct ContentView: View {
                 self.neumorphism.color.edgesIgnoringSafeArea(.all)
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack {
-                        Text("NeumorphismUI DemoApp")
-                            .font(.title)
-                            .foregroundColor(self.neumorphism.color.darkerColor())
-                        
-                        NeumorphismButton(shapeType: .circle) {
-                            self.neumorphism.changeMode()
+                        VStack (spacing: 0){
+                            
+                            Text("NeumorphismUI DemoApp")
+                                .font(.title)
+                                .foregroundColor(self.neumorphism.color.darkerColor())
+                            
+                            RoundedRectangle(cornerRadius: 1)
+                                .fill(self.neumorphism.color.darkerColor())
+                                .frame(width: 365, height: 1)
+                        }
+                        HStack {
+                            NeumorphismButton(shapeType: .circle) {
+                                self.neumorphism.changeMode()
+                            }
+                            
+                            NeumorphismButton(shapeType: .roundedRectangle(cornerRadius: 20), normalImage: Image(systemName: "star"), selectedImage: Image(systemName: "star.fill"))
+                            
+                            Circle()
+                                .fill(self.neumorphism.color)
+                                .neumorphismShadow()
+                                .frame(width: 100, height: 100)
+                                .padding()
                         }
                         
-                        NeumorphismButton(shapeType: .roundedRectangle(cornerRadius: 20), normalImage: Image(systemName: "star"), selectedImage: Image(systemName: "star.fill"))
-                        
-                        Circle()
-                            .fill(self.neumorphism.color)
-                            .neumorphismShadow()
-                            .frame(width: 200, height: 200)
-                            .padding()
-                        
-                        Rectangle()
-                            .fill(self.neumorphism.color)
-                            .neumorphismShadow()
-                            .frame(width: 200, height: 100)
-                            .padding()
+                        HStack {
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(self.neumorphism.color)
+                                .neumorphismShadow()
+                                .frame(width: 100, height: 80)
+                                .padding()
+                            
+                            NeumorphismDentView(width: 100, height: 80, cornerRadius: 16)
+                        }
                         
                         Circle()
                             .stroke(self.neumorphism.color, lineWidth: 16)
@@ -44,7 +56,6 @@ struct ContentView: View {
                             .frame(width: 200, height: 200)
                             .padding()
                         
-                        
                         RoundedRectangle(cornerRadius: 100)
                             .fill(self.neumorphism.color)
                             .neumorphismShadow()
@@ -53,7 +64,6 @@ struct ContentView: View {
                         Spacer()
                     }
                     .frame(width: geometry.size.width, height: nil)
-                    
                 }
                 .background(self.neumorphism.color)
             }
