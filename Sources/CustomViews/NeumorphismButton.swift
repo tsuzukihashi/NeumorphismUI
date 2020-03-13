@@ -12,6 +12,7 @@ public struct NeumorphismButton: View {
     private var height: CGFloat
     private var imageWidth: CGFloat
     private var imageHeight: CGFloat
+    private var shadowRadius: CGFloat
     private var handler: (() -> Void)?
     
     public init
@@ -23,6 +24,7 @@ public struct NeumorphismButton: View {
         height: CGFloat = 100,
         imageWidth: CGFloat = 60,
         imageHeight: CGFloat = 60,
+        shadowRadius: CGFloat = 8,
         handler: (() -> Void)? = nil
     ) {
         self.shapeType = shapeType
@@ -32,6 +34,7 @@ public struct NeumorphismButton: View {
         self.height = height
         self.imageWidth = imageWidth
         self.imageHeight = imageHeight
+        self.shadowRadius = shadowRadius
         self.handler = handler
     }
     
@@ -50,7 +53,7 @@ public struct NeumorphismButton: View {
                         .clipShape(self.getAnyShape(type: self.shapeType))
                         .foregroundColor(self.neumorphism.color)
                         .frame(width: self.width, height: self.height)
-                        .modifier(NeumorphismShadowModifier(isAnimation: isHeighlight))
+                        .modifier(NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight))
             )
                 .padding()
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))

@@ -19,13 +19,20 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 1)
                                 .fill(self.neumorphism.color.darkerColor())
                                 .frame(width: 365, height: 1)
+                            
+                            NeumorphismButton(shapeType: .circle, normalImage: Image(systemName: "book"), selectedImage: Image(systemName: "book.fill"), width: 48, height: 48, imageWidth: 24, imageHeight: 24, shadowRadius: 4) {
+                
+                            }
+                            .padding()
                         }
                         HStack {
                             NeumorphismButton(shapeType: .circle) {
                                 self.neumorphism.changeMode()
                             }
+                            .padding()
                             
                             NeumorphismButton(shapeType: .roundedRectangle(cornerRadius: 20), normalImage: Image(systemName: "star"), selectedImage: Image(systemName: "star.fill"))
+                                .padding()
                             
                             Circle()
                                 .fill(self.neumorphism.color)
