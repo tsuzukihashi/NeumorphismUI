@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 13.0.0, *)
+@available(iOS 13.0, *)
 public struct NeumorphismButton: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     @State var isSelected = false
@@ -61,7 +61,7 @@ public struct NeumorphismButton: View {
     }
 }
 
-@available(iOS 13.0.0, *)
+@available(iOS 13.0, *)
 struct ContentView_Previews: PreviewProvider {
     static let neumorphism = NeumorphismManager(
         lightColor: Color(hex: "C1D2EB"),

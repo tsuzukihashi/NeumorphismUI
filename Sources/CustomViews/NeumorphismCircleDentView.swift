@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 13.0.0, *)
+@available(iOS 13.0, *)
 public struct NeumorphismCircleDentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     
@@ -30,7 +30,7 @@ public struct NeumorphismCircleDentView: View {
     }
 }
 
-@available(iOS 13.0.0, *)
+@available(iOS 13.0, *)
 struct NeumorphismCircleDentView_Previews: PreviewProvider {
     static let neumorphism = NeumorphismManager(
         lightColor: Color(hex: "C1D2EB"),
