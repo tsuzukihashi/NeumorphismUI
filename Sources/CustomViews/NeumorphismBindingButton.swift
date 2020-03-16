@@ -52,7 +52,7 @@ public struct NeumorphismBindingButton: View {
                 .foregroundColor(self.neumorphism.fontColor())
                 .background(
                     Rectangle()
-                        .clipShape(getAnyShape(type: self.shapeType))
+                        .clipShape(self.shapeType.anyShape)
                         .foregroundColor(self.neumorphism.color)
                         .frame(width: self.width, height: self.height)
                         .modifier(self.isSelected ? NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: self.isSelected ) : NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight))
