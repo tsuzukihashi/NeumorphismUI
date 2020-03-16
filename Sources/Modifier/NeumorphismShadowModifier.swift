@@ -15,10 +15,9 @@ public struct NeumorphismShadowModifier: ViewModifier {
         self.darkShadowColor = darkShadowColor
         self.lightShadowColor = lightShadowColor
         if isAnimation {
-            self.x = -x/2
-            self.y = -y/2
+            self.x = -x / 2
+            self.y = -y / 2
             self.radius = radius / 4
-
         } else {
             self.x = x
             self.y = y

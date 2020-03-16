@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 13.0.0, *)
+@available(iOS 13.0, *)
 public struct NeumorphismButton: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     @State var isSelected = false
@@ -50,7 +50,7 @@ public struct NeumorphismButton: View {
                 .foregroundColor(self.neumorphism.fontColor())
                 .background(
                     Rectangle()
-                        .clipShape(getAnyShape(type: self.shapeType))
+                        .clipShape(self.shapeType.anyShape)
                         .foregroundColor(self.neumorphism.color)
                         .frame(width: self.width, height: self.height)
                         .modifier(self.isSelected ? NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: self.isSelected ) : NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight))
@@ -61,7 +61,7 @@ public struct NeumorphismButton: View {
     }
 }
 
-@available(iOS 13.0.0, *)
+@available(iOS 13.0, *)
 struct ContentView_Previews: PreviewProvider {
     static let neumorphism = NeumorphismManager(
         lightColor: Color(hex: "C1D2EB"),

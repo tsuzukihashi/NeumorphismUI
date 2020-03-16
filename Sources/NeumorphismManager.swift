@@ -23,13 +23,8 @@ public class NeumorphismManager: NeumorphismManagable, ObservableObject {
     
     public func changeMode() {
         isDark.toggle()
-        if isDark {
-            color = darkColor
-            UserDefaults.standard.set(true, forKey: "isDark")
-        } else {
-            color = lightColor
-            UserDefaults.standard.set(false, forKey: "isDark")
-        }
+        color = isDark ? darkColor : lightColor
+        UserDefaults.standard.set(isDark, forKey: "isDark")
     }
     
     public func fontColor(lightColor: Color? = nil, darkColor: Color? = nil) -> Color {
