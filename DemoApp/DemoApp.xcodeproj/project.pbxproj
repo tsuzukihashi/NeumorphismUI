@@ -14,6 +14,9 @@
 		DA1A6B77240B81A6001EA5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A6B76240B81A6001EA5EB /* Preview Assets.xcassets */; };
 		DA1A6B7A240B81A6001EA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1A6B78240B81A6001EA5EB /* LaunchScreen.storyboard */; };
 		DA5AFAD32418367C0098E0BB /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFAD22418367C0098E0BB /* SimpleView.swift */; };
+		DA5D60CC2422727E0021B0B7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60CB2422727E0021B0B7 /* BaseView.swift */; };
+		DA5D60CF2422767E0021B0B7 /* DentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60CE2422767E0021B0B7 /* DentView.swift */; };
+		DA5D60D1242277C50021B0B7 /* NeumorphismButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */; };
 		DA74B267240B820400AD9A06 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA74B266240B820400AD9A06 /* NeumorphismUI.framework */; };
 		DA74B268240B820400AD9A06 /* NeumorphismUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA74B266240B820400AD9A06 /* NeumorphismUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		DA1A6B79240B81A6001EA5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1A6B7B240B81A6001EA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA5AFAD22418367C0098E0BB /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
+		DA5D60CB2422727E0021B0B7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DA5D60CE2422767E0021B0B7 /* DentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentView.swift; sourceTree = "<group>"; };
+		DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonView.swift; sourceTree = "<group>"; };
 		DA74B266240B820400AD9A06 /* NeumorphismUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NeumorphismUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,7 +86,8 @@
 				DA1A6B6D240B81A4001EA5EB /* AppDelegate.swift */,
 				DA1A6B6F240B81A4001EA5EB /* SceneDelegate.swift */,
 				DA1A6B71240B81A4001EA5EB /* ContentView.swift */,
-				DA5AFAD22418367C0098E0BB /* SimpleView.swift */,
+				DA5D60CB2422727E0021B0B7 /* BaseView.swift */,
+				DA5D60CD242276650021B0B7 /* Views */,
 				DA1A6B73240B81A6001EA5EB /* Assets.xcassets */,
 				DA1A6B78240B81A6001EA5EB /* LaunchScreen.storyboard */,
 				DA1A6B7B240B81A6001EA5EB /* Info.plist */,
@@ -95,6 +102,16 @@
 				DA1A6B76240B81A6001EA5EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA5D60CD242276650021B0B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA5AFAD22418367C0098E0BB /* SimpleView.swift */,
+				DA5D60CE2422767E0021B0B7 /* DentView.swift */,
+				DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DA74B265240B820400AD9A06 /* Frameworks */ = {
@@ -178,9 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5AFAD32418367C0098E0BB /* SimpleView.swift in Sources */,
+				DA5D60D1242277C50021B0B7 /* NeumorphismButtonView.swift in Sources */,
 				DA1A6B6E240B81A4001EA5EB /* AppDelegate.swift in Sources */,
 				DA1A6B70240B81A4001EA5EB /* SceneDelegate.swift in Sources */,
+				DA5D60CF2422767E0021B0B7 /* DentView.swift in Sources */,
 				DA1A6B72240B81A4001EA5EB /* ContentView.swift in Sources */,
+				DA5D60CC2422727E0021B0B7 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

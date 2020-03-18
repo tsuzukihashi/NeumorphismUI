@@ -3,84 +3,39 @@ import NeumorphismUI
 
 struct ContentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
-    @State private var isSelected: Bool = false
-    @State private var isManager: Bool = false
+    @State private var showView: Bool = false
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                self.neumorphism.color.edgesIgnoringSafeArea(.all)
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack {
-                        VStack (spacing: 0){
-                            
-                            Text("NeumorphismUI DemoApp")
-                                .font(.title)
-                                .foregroundColor(self.neumorphism.fontColor())
-                            
-                            RoundedRectangle(cornerRadius: 1)
-                                .fill(self.neumorphism.color.darkerColor())
-                                .frame(width: 365, height: 1)
-                            
-                            NeumorphismBindingButton(isSelected: self.$isSelected, shapeType: .circle, normalImage: Image(systemName: "book"), selectedImage: Image(systemName: "book.fill"), width: 48, height: 48, imageWidth: 24, imageHeight: 24, shadowRadius: 4) {
-                                
-                            }
-                            .padding()
-                        }
-                        HStack {
-                            NeumorphismButton(shapeType: .circle) {
-                                self.neumorphism.changeMode()
-                            }
-                            .padding()
-                            
-                            NeumorphismButton(shapeType: .roundedRectangle(cornerRadius: 20), normalImage: Image(systemName: "star"), selectedImage: Image(systemName: "star.fill"))
-                                .padding()
-                            
-                            Circle()
-                                .fill(self.neumorphism.color)
-                                .neumorphismShadow()
-                                .frame(width: 100, height: 100)
-                                .padding()
-                        }
-                        
-                        HStack {
-                            Button(action: {
-                                self.isManager.toggle()
-                            }) {
-                                RoundedRectangle(cornerRadius: 16)
-                                    .fill(self.neumorphism.color)
-                                    .neumorphismShadow()
-                                    .frame(width: 100, height: 80)
-                            }
-                            
-                            NeumorphismDentView(width: 100, height: 80, cornerRadius: 16)
-                            
-                            
-                        }
-                        
-                        Circle()
-                            .stroke(self.neumorphism.color, style: StrokeStyle(lineWidth: 16, lineCap: .round, lineJoin: .round, dash: [8, 24], dashPhase: 16))
-                            .neumorphismShadow()
-                            .frame(width: 200, height: 200)
-                            .padding()
-                        
-                        RoundedRectangle(cornerRadius: 100)
-                            .fill(self.neumorphism.color)
-                            .neumorphismShadow()
-                            .frame(width: 300, height: 100)
-                            .padding()
-                        Spacer()
-                    }
-                    .frame(width: geometry.size.width, height: nil)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack (spacing: 0){
+                    Text("NeumorphismUI")
+                        .foregroundColor(self.neumorphism.fontColor())
+                        .font(.title)
+                    
+                    NeumorphismDentView(width: 300, height: 8, cornerRadius: 4)
+                    
+                    NavigationLink(destination: SimpleView()) {
+                        BaseView(name: "SimpleView", desc: "most simple neumorphism")
+                    }.padding()
+                    
+                    NavigationLink(destination: DentView()) {
+                        BaseView(name: "DentView", desc: "dent neumorphism")
+                    }.padding()
+                    
+                    NavigationLink(destination: NeumorphismButtonView()) {
+                        BaseView(name: "NeumorphismButtonView", desc: "neumorphism button")
+                    }.padding()
+                    
+                    Spacer()
                 }
-                .background(self.neumorphism.color)
-            }
+            }.background(self.neumorphism.color.edgesIgnoringSafeArea(.all))
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static let neumorphism = NeumorphismManager(
-        isDark: true,
+        isDark: false,
         lightColor: Color(hex: "C1D2EB"),
         darkColor: Color(hex: "131A20")
     )

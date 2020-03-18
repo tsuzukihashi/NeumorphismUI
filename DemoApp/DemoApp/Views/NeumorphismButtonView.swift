@@ -1,32 +1,27 @@
 import SwiftUI
 import NeumorphismUI
 
-struct SimpleView: View {
+struct NeumorphismButtonView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
 
     var body: some View {
         ZStack {
             neumorphism.color.edgesIgnoringSafeArea(.all)
-            Circle()
-                .fill(neumorphism.color)
-                .frame(width: 200, height: 200)
-                .neumorphismShadow()
+            NeumorphismButton(shapeType: .circle, width: 300, height: 300, imageWidth: 100, imageHeight: 100, shadowRadius: 8) {
+                print("test")
+            }
         }
-    }
-    
-    func test() {
-        print(UIColor())
     }
 }
 
-struct SimpleView_Previews: PreviewProvider {
+struct NeumorphismButtonView_Previews: PreviewProvider {
     static let neumorphism = NeumorphismManager(
         isDark: false,
         lightColor: Color(hex: "C1D2EB"),
         darkColor: Color(hex: "2C292C")
     )
     static var previews: some View {
-        SimpleView()
+        NeumorphismButtonView()
             .environmentObject(neumorphism)
     }
 }
