@@ -29,7 +29,7 @@ struct ContentView: View {
                     Spacer()
                 }
             }.background(self.neumorphism.color.edgesIgnoringSafeArea(.all))
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
