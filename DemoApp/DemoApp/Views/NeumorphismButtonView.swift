@@ -3,12 +3,19 @@ import NeumorphismUI
 
 struct NeumorphismButtonView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
-
+    
     var body: some View {
         ZStack {
             neumorphism.color.edgesIgnoringSafeArea(.all)
-            NeumorphismButton(shapeType: .circle, width: 300, height: 300, imageWidth: 100, imageHeight: 100, shadowRadius: 8) {
-                print("test")
+            NeumorphismButton(
+                shapeType: .circle,
+                width: 300,
+                height: 300,
+                imageWidth: 100,
+                imageHeight: 100,
+                shadowRadius: 8
+            ) {
+                print(#function)
             }
         }
     }

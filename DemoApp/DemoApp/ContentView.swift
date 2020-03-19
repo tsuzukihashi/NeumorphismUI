@@ -8,10 +8,15 @@ struct ContentView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack (spacing: 0){
-                    Text("NeumorphismUI")
-                        .foregroundColor(self.neumorphism.fontColor())
-                        .font(.title)
-                    
+                    HStack {
+                        Text("NeumorphismUI")
+                            .foregroundColor(self.neumorphism.fontColor())
+                            .font(.title)
+                        
+                        NeumorphismButton(shapeType: .circle, normalImage: Image(systemName: "sun.max"), selectedImage: Image(systemName: "moon"), width: 44, height: 44, imageWidth: 20, imageHeight: 20, shadowRadius: 4) {
+                            self.neumorphism.changeMode()
+                        }
+                    }
                     NeumorphismDentView(width: 300, height: 8, cornerRadius: 4)
                     
                     NavigationLink(destination: SimpleView()) {
@@ -24,6 +29,10 @@ struct ContentView: View {
                     
                     NavigationLink(destination: NeumorphismButtonView()) {
                         BaseView(name: "NeumorphismButtonView", desc: "neumorphism button")
+                    }.padding()
+                    
+                    NavigationLink(destination: BindingButtonView()) {
+                        BaseView(name: "NeumorphismBindingButton", desc: "neumorphism binding button")
                     }.padding()
                     
                     Spacer()
