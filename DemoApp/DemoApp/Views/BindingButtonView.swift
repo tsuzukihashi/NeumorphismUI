@@ -19,7 +19,7 @@ struct BindingButtonView: View {
                 imageHeight: 180,
                 shadowRadius: 4
             ) {
-                self.isDark.toggle()
+                self.neumorphism.changeMode()
             }
         }.onAppear() {
             self.isDark = self.neumorphism.isDark

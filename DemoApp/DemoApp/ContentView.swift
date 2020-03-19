@@ -4,6 +4,7 @@ import NeumorphismUI
 struct ContentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     @State private var showView: Bool = false
+    @State var isDark = false
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -13,8 +14,10 @@ struct ContentView: View {
                             .foregroundColor(self.neumorphism.fontColor())
                             .font(.title)
                         
-                        NeumorphismButton(shapeType: .circle, normalImage: Image(systemName: "sun.max"), selectedImage: Image(systemName: "moon"), width: 44, height: 44, imageWidth: 20, imageHeight: 20, shadowRadius: 4) {
+                        NeumorphismBindingButton(isSelected: $isDark, shapeType: .circle, normalImage: Image(systemName: "sun.max"), selectedImage: Image(systemName: "moon"), width: 44, height: 44, imageWidth: 20, imageHeight: 20, shadowRadius: 4) {
                             self.neumorphism.changeMode()
+                        }.onAppear() {
+                            self.isDark = self.neumorphism.isDark
                         }
                     }
                     NeumorphismDentView(width: 300, height: 8, cornerRadius: 4)
