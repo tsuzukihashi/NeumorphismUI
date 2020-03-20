@@ -7,8 +7,8 @@ public struct NeumorphismLabelButton: View {
     private var text: String
     private var font: Font?
     private var color: Color?
-    private var width: CGFloat
-    private var height: CGFloat
+    private var width: CGFloat?
+    private var height: CGFloat?
     private var cornerRadius: CGFloat
     private var handler: (() -> Void)?
     
@@ -17,8 +17,8 @@ public struct NeumorphismLabelButton: View {
         text: String = "Button",
         font: Font? = nil,
         color: Color? = nil,
-        width: CGFloat = 100,
-        height: CGFloat = 100,
+        width: CGFloat? = nil,
+        height: CGFloat? = nil,
         cornerRadius: CGFloat = 10,
         handler: (() -> Void)? = nil
     ) {

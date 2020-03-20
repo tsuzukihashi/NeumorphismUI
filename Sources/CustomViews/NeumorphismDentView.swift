@@ -4,13 +4,13 @@ import SwiftUI
 public struct NeumorphismDentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     
-    private let width: CGFloat
-    private let height: CGFloat
+    private let width: CGFloat?
+    private let height: CGFloat?
     private let cornerRadius: CGFloat
 
     public init(
-        width: CGFloat = 100,
-        height: CGFloat = 100,
+        width: CGFloat? = nil,
+        height: CGFloat? = nil,
         cornerRadius: CGFloat = 16
     ) {
         self.width = width

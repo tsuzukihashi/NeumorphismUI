@@ -8,10 +8,10 @@ public struct NeumorphismButton: View {
     private var shapeType: ShapeType
     private var normalImage: Image
     private var selectedImage: Image
-    private var width: CGFloat
-    private var height: CGFloat
-    private var imageWidth: CGFloat
-    private var imageHeight: CGFloat
+    private var width: CGFloat?
+    private var height: CGFloat?
+    private var imageWidth: CGFloat?
+    private var imageHeight: CGFloat?
     private var shadowRadius: CGFloat
     private var handler: (() -> Void)?
     
@@ -20,10 +20,10 @@ public struct NeumorphismButton: View {
         shapeType: ShapeType = .circle,
         normalImage: Image = Image(systemName: "heart"),
         selectedImage: Image = Image(systemName: "heart.fill"),
-        width: CGFloat = 100,
-        height: CGFloat = 100,
-        imageWidth: CGFloat = 60,
-        imageHeight: CGFloat = 60,
+        width: CGFloat? = nil,
+        height: CGFloat? = nil,
+        imageWidth: CGFloat? = nil,
+        imageHeight: CGFloat? = nil,
         shadowRadius: CGFloat = 8,
         handler: (() -> Void)? = nil
     ) {

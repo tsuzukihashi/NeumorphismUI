@@ -4,12 +4,12 @@ import SwiftUI
 public struct NeumorphismCircleDentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     
-    private let width: CGFloat
-    private let height: CGFloat
+    private let width: CGFloat?
+    private let height: CGFloat?
     
     public init(
-        width: CGFloat = 100,
-        height: CGFloat = 100
+        width: CGFloat? = nil,
+        height: CGFloat? = nil
     ) {
         self.width = width
         self.height = height
