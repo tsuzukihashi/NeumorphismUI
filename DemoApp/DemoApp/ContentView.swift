@@ -38,6 +38,10 @@ struct ContentView: View {
                         BaseView(name: "NeumorphismBindingButton", desc: "neumorphism binding button")
                     }.padding()
                     
+                    NavigationLink(destination: NeumorphismSliderView()) {
+                        BaseView(name: "NeumorphismSlider", desc: "custom slider")
+                    }.padding()
+                    
                     Spacer()
                 }
             }.background(self.neumorphism.color.edgesIgnoringSafeArea(.all))
