@@ -4,6 +4,10 @@ import SwiftUI
 public struct NeumorphismSlider: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     @Binding var value: Double
+    
+    var changeHandler: (() -> Void)?
+    var endedHandler: (() -> Void)?
+    
     private var tipColor: Color?
     private let barColor: Color?
     private let height: CGFloat
@@ -14,14 +18,17 @@ public struct NeumorphismSlider: View {
         height: CGFloat = 16,
         tipColor: Color? = nil,
         barColor: Color? = nil,
-        value: Binding<Double>
+        value: Binding<Double>,
+        changeHandler: (() -> Void)? = nil,
+        endedHandler: (() -> Void)? =  nil
     ) {
         self.height = height
         self.width = width
         self.tipColor = tipColor
         self.barColor = barColor
         self._value = value
-        
+        self.changeHandler = changeHandler
+        self.endedHandler = endedHandler
         validate()
     }
     
@@ -67,10 +74,12 @@ public struct NeumorphismSlider: View {
                 .onChanged({ (value) in
                     self.value = Double(value.location.x / self.width)
                     self.validate()
+                    self.changeHandler?()
                 })
                 .onEnded({ (value) in
                     self.value = Double(value.location.x / self.width)
                     self.validate()
+                    self.endedHandler?()
                 })
         )
     }
