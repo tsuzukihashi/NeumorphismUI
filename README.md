@@ -78,3 +78,32 @@ NeumorphismButton(
 
 ![Simple Use NeumorphismButton](https://lh3.googleusercontent.com/O8FJWsok-zSCk6YzSVIQuZujVcTNeyNRuYc-OOicDlVUIChbVNDI7Ftlipdk7WOYyAg4uWzjsPnDLxhUYbQvqduR09gxfLzylmKSv47OgC__L6B6Afa5LqC3TxwYISmdQ2XBIEfuyWZf-fBWj27NMsfPfhy23FI8PwZsMZ6DafzJfyvAEXn6FV5dytZwf4CDqczXRFlniAvW23GTqKsg185qwspN2optyYR7KdYoai4TARzoc-TlLgYhnyCAEH0-stH3BH7XSjCpNe4aPe5Niub067Kf8LLdDio2K38BPfN4VDTq2P1KYF4Ahdgbcj3bw9zOIaBlTAQxcSclKrvJ-1Esp77-DFwqDEWu3vPNTulBOrx5m9cnojQo6wHG7hyb-cmIaRLZFeXLvhgKMDJobgeoGvkpDyCLv03bN4xMOqUCJvNGCNfQ6LB4fPm80uS5FAM06_4qesKreX2Ihn5DAkhV99K814h9D1y-t9K7o6iGxslrCq134moRa5Ppenz1mTl2XWsmipDaixAvqet5qrkQW0Ph3fLCjsiulwtbtCvXHxvAaqqvNS10G1Eh4fMavSMJi5ztLghkS-bQM0UgpDO4RS0E8XzbzxQ5tDnU0e7cIv1tqsWIgGTajeT-lUVhAFShRjlIDnccTuOz6dHQ4XwEFbojt7C99jY75p3NQxFvijpyOYsBtIxybcQ6pgb-vAq6nb1HXAiOjIdDm8bFOiEQC1aAvH41YbGq7utrHaEStJGsVQ=s256-no)
 
+## NeumorphismSlider
+
+
+Simple Usage!
+
+```swift
+struct NeumorphismSliderView: View {
+    @EnvironmentObject var neumorphism: NeumorphismManager
+    @State private var value: Double = 0
+    
+    var body: some View {
+        ZStack {
+            neumorphism.color.edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("VALUE: \(value)")
+                    .foregroundColor(self.neumorphism.fontColor())
+                
+                NeumorphismSlider(value: self.$value, changeHandler: {
+                    // call change method
+                }) {
+                    // call ended method
+                }
+            }
+        }
+    }
+}
+```
+
+![NeumorphismSlider](https://lh3.googleusercontent.com/ysSXR8ooZy4X42bBkO-Mrr_0N78RTizBpRpfyHMn5N9TtJoCfEUR-9KxDanfshKlhUaFhZXM_OdM-9Q_jduBE4w0HmotYYrC6uGGiKa_FulHsmA85RWkjg10oGyIsKzcUZPxz6FYTlJ2OEug7GnJlc_Dwk8SeZPS3HsnYUFxsnIRSAXuImqGQPeAJho3rMrS-kUqs8ZR0ITjXtRWBRpqbBWOZvfynsQ2ZjA9CEbwKSIom5dF3x8bB4z1BhuP5kBUsXZB0pahQYGc4nFUu6DXc34mDq88E5VqBqaLQqPY3nhv7HxkpbXoYh6T2ztkPK1L67apJT0YJq0zmctVcgok4Oa8dq7v9WlstqR1Q_DTSg35ixLdzQPMfCNJagrqq-i8gqGoAZm5xnwyxy1v15fMrZhNP3sAhkJSLB2WtxbAu8CZ1cnYC3yObY68yYLmiY-VefwSu6yMEuxo4a_mM0jtk2YuN84wuCpbOT-aeV7UIRi0XwwoM6xJZVGyvWu7Awmk3TfkHBlcVwEOvzdBirzI77yI4RAu0W7NK1mqhza7FVaBJDYtegKPYUc-oMJFGOG1-NVYfQzWLi4DyB7isMMzGr1sz1vS3JrYBGdOLgyRGFSLBMBBQoKc52VZ8hQF1wWFRl_jJ8rHqozRoQn8lS0mIiUMpwiFTgx4NXEENNVSZMXFiNGLig0doCo3G2QXipJi9E8WfkMe4hpbJCsYDchPJHc1K5JnjmPt1B0Lw3hJfE-XIC_ArrmkKewp=w218-h472-no)
