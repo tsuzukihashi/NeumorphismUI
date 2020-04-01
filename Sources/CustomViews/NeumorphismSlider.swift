@@ -42,32 +42,12 @@ public struct NeumorphismSlider: View {
             
             ZStack (alignment: .trailing){
                 RoundedRectangle(cornerRadius: self.height / 2)
-                    .fill(
-                        LinearGradient(gradient:
-                            Gradient(colors:
-                                [barColor ?? self.neumorphism.color.darkerColor(),
-                                 barColor?.darkerColor() ?? self.neumorphism.color.darkerColor().darkerColor()]),
-                                       startPoint: .leading,
-                                       endPoint: .trailing))
+                    .fill(barColor ?? self.neumorphism.color.darkerColor())
                     .frame(
                         width: self.width * CGFloat(value),
-                        height: height * 0.9,
-                        alignment: .leading)
-                    .padding(.leading, 4)
-                HStack {
-                    ZStack {
-                        Circle()
-                            .fill(self.neumorphism.color)
-                            .frame(width: height * 2, height: height * 2)
-                            .neumorphismShadow()
-                        
-                    NeumorphismDentView(
-                        width: height * 0.8,
                         height: height * 0.8,
-                        color: tipColor ?? self.neumorphism.color.darkerColor(),
-                        cornerRadius: height/2)
-                    }
-                }
+                        alignment: .leading)
+                    .padding(.init(top: 8, leading: 2, bottom: 8, trailing: 2))
             }
         }.gesture(
             DragGesture(minimumDistance: 0)
@@ -108,7 +88,7 @@ public struct NeumorphismSlider_Previews: PreviewProvider {
         NeumorphismSlider(
             width: 300,
             height: 16,
-            value: .constant(0.4))
+            value: .constant(0.5))
             .environmentObject(neumorphism)
             .previewLayout(.sizeThatFits)
     }
