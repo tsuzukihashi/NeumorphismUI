@@ -25,10 +25,18 @@ public class NeumorphismManager: NeumorphismManagable, ObservableObject {
     
     public func setLightColor(color: Color) {
         self.lightColor = color
+
+        if !isDark {
+            self.color = color
+        }
     }
     
     public func setDarkColor(color: Color) {
         self.darkColor = color
+        
+        if isDark {
+             self.color = color
+         }
     }
     
     public func changeMode() {
