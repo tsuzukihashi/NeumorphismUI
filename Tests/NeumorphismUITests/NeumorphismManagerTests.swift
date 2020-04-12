@@ -28,4 +28,18 @@ class NeumorphismManagerTests: XCTestCase {
         
         XCTAssertEqual(color, Color.black)
     }
+    
+    func test_setLightColor() {
+        let testColor = Color(hex: "FFFFFF")
+        mock.setLightColor(color: testColor)
+        XCTAssertEqual(mock.setLightColorCallCount, 1)
+        XCTAssertEqual(mock.setLightColorArgs, testColor)
+    }
+    
+    func test_setDarkColor() {
+        let testColor = Color(hex: "FFFFFF")
+        mock.setDarkColor(color: testColor)
+        XCTAssertEqual(mock.setDarkColorCallCount, 1)
+        XCTAssertEqual(mock.setDarkColorArgs, testColor)
+    }
 }

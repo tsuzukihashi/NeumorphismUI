@@ -22,4 +22,18 @@ class NeumorphismManagerMock: NeumorphismManagable {
         changeModeCallCount += 1
         isDark.toggle()
     }
+    
+    var setLightColorCallCount = 0
+    var setLightColorArgs: Color?
+    func setLightColor(color: Color) {
+        setLightColorCallCount += 1
+        setLightColorArgs = color
+    }
+    
+    var setDarkColorCallCount = 0
+    var setDarkColorArgs: Color?
+    func setDarkColor(color: Color) {
+        setDarkColorCallCount += 1
+        setDarkColorArgs = color
+    }
 }
