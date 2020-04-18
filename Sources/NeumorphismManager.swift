@@ -24,24 +24,33 @@ public class NeumorphismManager: NeumorphismManagable, ObservableObject {
     }
     
     public func setLightColor(color: Color) {
-        self.lightColor = color
-
-        if !isDark {
-            self.color = color
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.lightColor = color
+            
+            if !self.isDark {
+                self.color = color
+            }
         }
     }
     
     public func setDarkColor(color: Color) {
-        self.darkColor = color
-        
-        if isDark {
-             self.color = color
-         }
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.darkColor = color
+            
+            if self.isDark {
+                self.color = color
+            }
+        }
     }
     
     public func changeMode() {
-        isDark.toggle()
-        color = isDark ? darkColor : lightColor
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.isDark.toggle()
+            self.color = self.isDark ? self.darkColor : self.lightColor
+        }
         UserDefaults.standard.set(isDark, forKey: "isDark")
     }
     
