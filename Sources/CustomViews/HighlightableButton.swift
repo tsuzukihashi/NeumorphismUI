@@ -20,8 +20,10 @@ public struct HighlightableButton<Label>: View where Label: View {
                         withAnimation {
                             self.isHighlighted = true
                         }}
-                    .onEnded { _ in
-                        self.action()
+                    .onEnded { value in
+                        if abs(value.translation.height) <= 64 {
+                            self.action()
+                        }
                         withAnimation {
                             self.isHighlighted = false
                         }})
