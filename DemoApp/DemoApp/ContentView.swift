@@ -10,9 +10,18 @@ struct ContentView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack (spacing: 0){
                     HStack {
-                        Text("NeumorphismUI")
-                            .foregroundColor(self.neumorphism.fontColor())
-                            .font(.title)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 24)
+                                .fill(self.neumorphism.color)
+                                .neumorphismShadow()
+                                .frame(width: 300, height: 64, alignment: .center)
+                            
+                            Text("NeumorphismUI")
+                                .shadow(color: self.neumorphism.color.darkerColor(), radius: 4, x: 4, y: 4)
+                                .shadow(color: self.neumorphism.color.lighterColor(), radius: 4, x: -4, y: -4)
+                                .foregroundColor(self.neumorphism.color.darkerColor())
+                                .font(.system(size: 36, weight: .bold, design: .rounded))
+                        }
                         
                         NeumorphismBindingButton(isSelected: $isDark, shapeType: .circle, normalImage: Image(systemName: "sun.max"), selectedImage: Image(systemName: "moon"), width: 44, height: 44, imageWidth: 20, imageHeight: 20, shadowRadius: 4) {
                             self.neumorphism.changeMode()
@@ -20,7 +29,8 @@ struct ContentView: View {
                             self.isDark = self.neumorphism.isDark
                         }
                     }
-                    NeumorphismDentView(width: 300, height: 8, cornerRadius: 4)
+                    
+                    Spacer()
                     
                     NavigationLink(destination: SimpleView()) {
                         BaseView(name: "SimpleView", desc: "most simple neumorphism")
