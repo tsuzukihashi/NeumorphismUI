@@ -5,9 +5,9 @@ public extension View {
     func neumorphismShadow(
         darkShadowColor: Color? = nil,
         lightShadowColor: Color? = nil,
-        radius: CGFloat = 8,
-        x: CGFloat = 4,
-        y: CGFloat = 4,
+        radius: CGFloat = 16,
+        x: CGFloat = 8,
+        y: CGFloat = 8,
         isAnimation: Bool = false
     ) -> some View {
         self.modifier(NeumorphismShadowModifier(
