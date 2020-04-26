@@ -6,11 +6,12 @@ struct SimpleView: View {
     
     var body: some View {
         ZStack {
-            neumorphism.color.edgesIgnoringSafeArea(.all)
+            Color(hex: "C1D2EB").edgesIgnoringSafeArea(.all)
             Circle()
-                .fill(neumorphism.color)
+                .fill(Color(hex: "C1D2EB"))
                 .frame(width: 200, height: 200)
-                .neumorphismShadow()
+                .shadow(color: Color(hex: "C1D2EB").darkerColor(), radius: 16, x: 8, y: 8)
+                .shadow(color: Color(hex: "C1D2EB").lighterColor(), radius: 16, x: -8, y: -8)
         }
     }
 }
@@ -24,5 +25,6 @@ struct SimpleView_Previews: PreviewProvider {
     static var previews: some View {
         SimpleView()
             .environmentObject(neumorphism)
+            .previewLayout(.sizeThatFits)
     }
 }

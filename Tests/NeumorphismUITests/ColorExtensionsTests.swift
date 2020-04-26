@@ -31,14 +31,6 @@ class ColorExtensiontests: XCTestCase {
         XCTAssertEqual(alpha, 1.0)
     }
     
-    func test_getHSBA() {
-        let (hue, saturation, brightness, alpha) = color.getHSBA()
-        XCTAssertEqual(hue, 0.0)
-        XCTAssertEqual(saturation, 0.0)
-        XCTAssertEqual(brightness, 0.0)
-        XCTAssertEqual(alpha, 1.0)
-    }
-    
     // https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6
     func test_lighterColor() {
         color = Color(hex: "E0E5EC")

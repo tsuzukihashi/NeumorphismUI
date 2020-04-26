@@ -37,13 +37,7 @@ public extension Color {
         let (h, s, l) = ColorTransformer.rgbToHsl(r: r, g: g, b: b)
         return (h, s, l, a)
     }
-    
-    func getHSBA() -> (h: Double, s: Double, b: Double, a: Double) {
-        let (r, g, b, a) = getRGBA()
-        let (h, s, v) = ColorTransformer.rgbToHsb(r: r, g: g, b: b)
-        return (h, s, v, a)
-    }
-    
+
     func lighterColor() -> Color {
         let (h, s, l, a) = getHSLA()
         return Color(hue: h, saturation: s, lightness: min(l + 0.12, 1), opacity: a)
