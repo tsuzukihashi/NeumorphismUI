@@ -25,5 +25,6 @@ struct NeumorphismSliderView: View {
 struct NeumorphismSliderView_Previews: PreviewProvider {
     static var previews: some View {
         NeumorphismSliderView()
+            .previewLayout(.sizeThatFits)
     }
 }

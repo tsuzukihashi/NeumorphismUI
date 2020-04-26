@@ -12,6 +12,7 @@ public struct NeumorphismButton: View {
     private var height: CGFloat?
     private var imageWidth: CGFloat?
     private var imageHeight: CGFloat?
+    private var color: Color?
     private var shadowRadius: CGFloat
     private var handler: (() -> Void)?
     
@@ -24,6 +25,7 @@ public struct NeumorphismButton: View {
         height: CGFloat? = nil,
         imageWidth: CGFloat? = nil,
         imageHeight: CGFloat? = nil,
+        color: Color? = nil,
         shadowRadius: CGFloat = 8,
         handler: (() -> Void)? = nil
     ) {
@@ -34,6 +36,7 @@ public struct NeumorphismButton: View {
         self.height = height
         self.imageWidth = imageWidth
         self.imageHeight = imageHeight
+        self.color = color
         self.shadowRadius = shadowRadius
         self.handler = handler
     }
@@ -51,9 +54,13 @@ public struct NeumorphismButton: View {
                 .background(
                     Rectangle()
                         .clipShape(self.shapeType.anyShape)
-                        .foregroundColor(self.neumorphism.color)
+                        .foregroundColor(self.color ?? self.neumorphism.color)
                         .frame(width: self.width, height: self.height)
-                        .modifier(self.isSelected ? NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight ) : NeumorphismShadowModifier(radius: self.shadowRadius, isAnimation: isHeighlight))
+                        .modifier(
+                            self.isSelected
+                                ? NeumorphismShadowModifier(baseColor: self.color, radius: self.shadowRadius, isAnimation: isHeighlight)
+                                : NeumorphismShadowModifier(baseColor: self.color, radius: self.shadowRadius, isAnimation: isHeighlight)
+                    )
             )
                 .padding()
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))

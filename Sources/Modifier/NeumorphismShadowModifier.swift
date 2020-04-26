@@ -4,23 +4,20 @@ import SwiftUI
 public struct NeumorphismShadowModifier: ViewModifier {
     @EnvironmentObject var neumorphism: NeumorphismManager
     
-    private let darkShadowColor: Color?
-    private let lightShadowColor: Color?
+    private let baseColor: Color?
     
     private let radius: CGFloat
     private let x: CGFloat
     private let y: CGFloat
     
     public init(
-        darkShadowColor: Color? = nil,
-        lightShadowColor: Color? = nil,
+        baseColor: Color? = nil,
         radius: CGFloat = 16,
         x: CGFloat = 8,
         y: CGFloat = 8,
         isAnimation: Bool = false
     ) {
-        self.darkShadowColor = darkShadowColor
-        self.lightShadowColor = lightShadowColor
+        self.baseColor = baseColor
         if isAnimation {
             self.x = -x / 2
             self.y = -y / 2
@@ -35,12 +32,12 @@ public struct NeumorphismShadowModifier: ViewModifier {
     public func body(content: Content) -> some View {
         content
             .shadow(
-                color: darkShadowColor ?? neumorphism.color.darkerColor(),
+                color: baseColor?.darkerColor() ?? neumorphism.color.darkerColor(),
                 radius: radius,
                 x: x, y: y
         )
             .shadow(
-                color: lightShadowColor ?? neumorphism.color.lighterColor(),
+                color: baseColor?.lighterColor() ?? neumorphism.color.lighterColor(),
                 radius: radius,
                 x: -x, y: -y
         )

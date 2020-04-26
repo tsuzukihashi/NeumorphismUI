@@ -13,6 +13,7 @@ struct NeumorphismButtonView: View {
                 height: 300,
                 imageWidth: 100,
                 imageHeight: 100,
+                color: Color(hex: "2C292C"),
                 shadowRadius: 8
             ) {
                 print(#function)
