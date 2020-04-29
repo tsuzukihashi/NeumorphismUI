@@ -15,7 +15,7 @@
 		DA1A6B7A240B81A6001EA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1A6B78240B81A6001EA5EB /* LaunchScreen.storyboard */; };
 		DA5AFAD32418367C0098E0BB /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFAD22418367C0098E0BB /* SimpleView.swift */; };
 		DA5D60CC2422727E0021B0B7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60CB2422727E0021B0B7 /* BaseView.swift */; };
-		DA5D60CF2422767E0021B0B7 /* DentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60CE2422767E0021B0B7 /* DentView.swift */; };
+		DA5D60CF2422767E0021B0B7 /* Concave.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60CE2422767E0021B0B7 /* Concave.swift */; };
 		DA5D60D1242277C50021B0B7 /* NeumorphismButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */; };
 		DA5D60D324239E090021B0B7 /* BindingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60D224239E090021B0B7 /* BindingButtonView.swift */; };
 		DA6FEED324311E5800C1B554 /* NeumorphismSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6FEED224311E5700C1B554 /* NeumorphismSliderView.swift */; };
@@ -48,7 +48,7 @@
 		DA1A6B7B240B81A6001EA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA5AFAD22418367C0098E0BB /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 		DA5D60CB2422727E0021B0B7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		DA5D60CE2422767E0021B0B7 /* DentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentView.swift; sourceTree = "<group>"; };
+		DA5D60CE2422767E0021B0B7 /* Concave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concave.swift; sourceTree = "<group>"; };
 		DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonView.swift; sourceTree = "<group>"; };
 		DA5D60D224239E090021B0B7 /* BindingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingButtonView.swift; sourceTree = "<group>"; };
 		DA6FEED224311E5700C1B554 /* NeumorphismSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismSliderView.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				DA5AFAD22418367C0098E0BB /* SimpleView.swift */,
-				DA5D60CE2422767E0021B0B7 /* DentView.swift */,
+				DA5D60CE2422767E0021B0B7 /* Concave.swift */,
 				DA5D60D224239E090021B0B7 /* BindingButtonView.swift */,
 				DA6FEED224311E5700C1B554 /* NeumorphismSliderView.swift */,
 				DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */,
@@ -205,7 +205,7 @@
 				DA1A6B6E240B81A4001EA5EB /* AppDelegate.swift in Sources */,
 				DA1A6B70240B81A4001EA5EB /* SceneDelegate.swift in Sources */,
 				DA5D60D324239E090021B0B7 /* BindingButtonView.swift in Sources */,
-				DA5D60CF2422767E0021B0B7 /* DentView.swift in Sources */,
+				DA5D60CF2422767E0021B0B7 /* Concave.swift in Sources */,
 				DA1A6B72240B81A4001EA5EB /* ContentView.swift in Sources */,
 				DA6FEED324311E5800C1B554 /* NeumorphismSliderView.swift in Sources */,
 				DA5D60CC2422727E0021B0B7 /* BaseView.swift in Sources */,

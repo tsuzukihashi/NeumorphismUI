@@ -36,8 +36,8 @@ struct ContentView: View {
                         BaseView(name: "SimpleView", desc: "most simple neumorphism")
                     }.padding()
                     
-                    NavigationLink(destination: DentView()) {
-                        BaseView(name: "DentView", desc: "dent neumorphism")
+                    NavigationLink(destination: Concave()) {
+                        BaseView(name: "Concave", desc: "concave neumorphism")
                     }.padding()
                     
                     NavigationLink(destination: NeumorphismButtonView()) {

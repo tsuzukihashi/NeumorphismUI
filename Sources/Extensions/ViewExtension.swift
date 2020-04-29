@@ -17,4 +17,13 @@ public extension View {
             isAnimation: isAnimation
         ))
     }
+    
+    func neumorphismConcave(
+        shapeType: ShapeType = .circle,
+        color: Color? = nil
+    ) -> some View {
+        self.modifier(NeumorphismConcaveModifier(
+            shapeType: shapeType, color: color
+        ))
+    }
 }

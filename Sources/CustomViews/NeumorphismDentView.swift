@@ -4,17 +4,20 @@ import SwiftUI
 public struct NeumorphismDentView: View {
     @EnvironmentObject var neumorphism: NeumorphismManager
     
+    private var shapeType: ShapeType
     private let width: CGFloat?
     private let height: CGFloat?
     private let color: Color?
     private let cornerRadius: CGFloat
 
     public init(
+        shapeType: ShapeType = .roundedRectangle(cornerRadius: 16),
         width: CGFloat? = nil,
         height: CGFloat? = nil,
         color: Color? = nil,
         cornerRadius: CGFloat = 16
     ) {
+        self.shapeType = shapeType
         self.width = width
         self.height = height
         self.color = color
@@ -22,28 +25,10 @@ public struct NeumorphismDentView: View {
     }
     
     public var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: self.cornerRadius)
-                .fill(self.color ?? self.neumorphism.color)
-                .frame(width: self.width, height: self.height)
-                .overlay(
-                    RoundedRectangle(cornerRadius: self.cornerRadius)
-                        .stroke(self.color ?? self.neumorphism.color, lineWidth: 4)
-                        .shadow(
-                            color: self.color?.darkerColor() ?? self.neumorphism.color.darkerColor(),
-                                radius: 4,
-                                x: 4,
-                                y: 4)
-                        .clipShape(RoundedRectangle(cornerRadius: self.cornerRadius))
-                        .shadow(
-                            color: self.color?.lighterColor() ?? self.neumorphism.color.lighterColor(),
-                            radius: 2,
-                            x: -2,
-                            y: -2)
-                        .clipShape(RoundedRectangle(cornerRadius: self.cornerRadius))
-            )
-            .cornerRadius(self.cornerRadius)
-        }
+        Rectangle()
+            .fill(self.color ?? self.neumorphism.color)
+            .frame(width: self.width, height: self.height)
+            .neumorphismConcave(shapeType: shapeType, color: color)
     }
 }
 
@@ -54,8 +39,15 @@ struct NeumorphismTextView_Previews: PreviewProvider {
         darkColor: Color(hex: "2C292C")
     )
     static var previews: some View {
-        NeumorphismDentView()
-            .environmentObject(neumorphism)
-            .previewLayout(.sizeThatFits)
+        ZStack {
+            neumorphism.color
+            NeumorphismDentView()
+                .frame(width: 100, height: 100)
+                .environmentObject(neumorphism)
+                .padding()
+        }
+        .frame(width: 100, height: 100)
+        .padding()
+        .previewLayout(.sizeThatFits)
     }
 }
