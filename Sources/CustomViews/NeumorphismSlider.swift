@@ -36,8 +36,7 @@ public struct NeumorphismSlider: View {
         ZStack(alignment: .leading) {
             NeumorphismDentView(
                 width: width,
-                height: height,
-                cornerRadius: self.height / 2
+                height: height
             )
             
             ZStack (alignment: .trailing){
