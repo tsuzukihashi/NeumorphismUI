@@ -28,7 +28,10 @@ struct Concave: View {
                     .neumorphismConcave(shapeType: .ellipse, color: nil)
                     .frame(width: 300, height: 100)
                 
-                
+                Capsule(style: .circular)
+                    .fill(neumorphism.color)
+                    .neumorphismConcave(shapeType: .capsule, color: nil)
+                    .frame(width: 300, height: 100)
             }
         }
     }
