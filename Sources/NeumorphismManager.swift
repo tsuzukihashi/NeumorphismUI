@@ -50,8 +50,8 @@ public class NeumorphismManager: NeumorphismManagable, ObservableObject {
             guard let self = self else { return }
             self.isDark.toggle()
             self.color = self.isDark ? self.darkColor : self.lightColor
+            UserDefaults.standard.set(self.isDark, forKey: "isDark")
         }
-        UserDefaults.standard.set(isDark, forKey: "isDark")
     }
     
     public func fontColor(lightColor: Color? = nil, darkColor: Color? = nil) -> Color {
