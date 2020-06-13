@@ -12,6 +12,12 @@ struct NeumorphismSliderView: View {
                 Text("VALUE: \(value)")
                     .foregroundColor(self.neumorphism.fontColor())
                 
+                NeumorphismSlider(showPointer: true, value: self.$value, changeHandler: {
+                    // call change method
+                }) {
+                    // call ended method
+                }
+                
                 NeumorphismSlider(value: self.$value, changeHandler: {
                     // call change method
                 }) {
