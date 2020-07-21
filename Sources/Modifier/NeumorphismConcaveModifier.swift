@@ -22,7 +22,6 @@ struct NeumorphismConcaveModifier: ViewModifier {
                     .shadow(color: color?.lighterColor() ?? neumorphism.color.lighterColor(),
                             radius: 4, x: -4, y: -4))
             .clipShape(shapeType.anyShape)
-        
     }
 }
 
@@ -44,6 +43,5 @@ struct NeumorphismConcaveModifier_Previews: PreviewProvider {
         .frame(width: 100, height: 100)
         .padding()
         .previewLayout(.sizeThatFits)
-        
     }
 }

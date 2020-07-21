@@ -16,7 +16,11 @@ public class NeumorphismManager: NeumorphismManagable, ObservableObject {
     private var lightColor: Color
     private var darkColor: Color
     
-    public init(isDark: Bool = UserDefaults.standard.bool(forKey: "isDark"), lightColor: Color = Color(hex: "C1D2EB"), darkColor: Color = Color(hex: "2C292C")) {
+    public init(
+        isDark: Bool = UserDefaults.standard.bool(forKey: "isDark"),
+        lightColor: Color = Color(hex: "C1D2EB"),
+        darkColor: Color = Color(hex: "2C292C")
+    ) {
         self.lightColor = lightColor
         self.darkColor = darkColor
         self.isDark = isDark
