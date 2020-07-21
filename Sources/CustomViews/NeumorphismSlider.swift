@@ -12,12 +12,14 @@ public struct NeumorphismSlider: View {
     private let barColor: Color?
     private let height: CGFloat
     private let width: CGFloat
+    private var showPointer: Bool
     
     public init(
         width: CGFloat = 300,
         height: CGFloat = 16,
         tipColor: Color? = nil,
         barColor: Color? = nil,
+        showPointer: Bool = false,
         value: Binding<Double>,
         changeHandler: (() -> Void)? = nil,
         endedHandler: (() -> Void)? =  nil
@@ -26,6 +28,7 @@ public struct NeumorphismSlider: View {
         self.width = width
         self.tipColor = tipColor
         self.barColor = barColor
+        self.showPointer = showPointer
         self._value = value
         self.changeHandler = changeHandler
         self.endedHandler = endedHandler
@@ -39,7 +42,7 @@ public struct NeumorphismSlider: View {
                 height: height
             )
             
-            ZStack (alignment: .trailing){
+            ZStack(alignment: .trailing) {
                 RoundedRectangle(cornerRadius: self.height / 2)
                     .fill(barColor ?? self.neumorphism.color.darkerColor())
                     .frame(
@@ -47,6 +50,14 @@ public struct NeumorphismSlider: View {
                         height: height * 0.8,
                         alignment: .leading)
                     .padding(.init(top: 8, leading: 2, bottom: 8, trailing: 2))
+                if self.showPointer {
+                    ZStack {
+                        Circle()
+                            .fill(self.neumorphism.color)
+                            .frame(width: self.height * 1.5, height: self.height * 1.5)
+                            .shadow(color: self.neumorphism.color.darkerColor(), radius: 4, x: 0, y: 0)
+                    }
+                }
             }
         }.gesture(
             DragGesture(minimumDistance: 0)
