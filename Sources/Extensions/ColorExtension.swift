@@ -4,7 +4,12 @@ import SwiftUI
 @available(OSX 10.15, *)
 public extension Color {
     
-    init(hue: Double, saturation: Double, lightness: Double, opacity: Double = 1) {
+    init(
+        hue: Double,
+        saturation: Double,
+        lightness: Double,
+        opacity: Double = 1
+    ) {
         let (h, s, b) = ColorTransformer.hslToHsb(h: hue, s: saturation, l: lightness)
         self = Color(hue: h, saturation: s, brightness: b, opacity: opacity)
     }
