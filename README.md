@@ -1,3 +1,5 @@
+[![Github stars](https://img.shields.io/github/stars/tsuzukihashi/NeumorphismUI)](https://github.com/tsuzukihashi/NeumorphismUI/stargazers)
+[![Github forks](https://img.shields.io/github/forks/tsuzukihashi/NeumorphismUI)](https://github.com/tsuzukihashi/NeumorphismUI/network/members)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
