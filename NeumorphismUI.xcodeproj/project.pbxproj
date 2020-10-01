@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		AA5875A325263BD40015AF11 /* NeumorphismContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5875A225263BD40015AF11 /* NeumorphismContent.swift */; };
 		DA14F56F2458DEFF008BCD97 /* NeumorphismConcaveModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA14F56E2458DEFF008BCD97 /* NeumorphismConcaveModifier.swift */; };
 		DA5AFAC9241691210098E0BB /* NeumorphismButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFAC8241691210098E0BB /* NeumorphismButton.swift */; };
 		DA5AFACD2418332A0098E0BB /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFACC2418332A0098E0BB /* ShapeType.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA5875A225263BD40015AF11 /* NeumorphismContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeumorphismContent.swift; sourceTree = "<group>"; };
 		DA14F56E2458DEFF008BCD97 /* NeumorphismConcaveModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismConcaveModifier.swift; sourceTree = "<group>"; };
 		DA1A6B5F240B76D9001EA5EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA5AFAC8241691210098E0BB /* NeumorphismButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButton.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				DA954C772411D9740052B8FF /* NeumorphismManager.swift */,
 				DA5AFACE241833430098E0BB /* AnyShape.swift */,
 				DA5AFACC2418332A0098E0BB /* ShapeType.swift */,
+				AA5875A225263BD40015AF11 /* NeumorphismContent.swift */,
 				DA987319240BDE580083EB5E /* CustomViews */,
 				OBJ_10 /* Extensions */,
 				DA5AFAD0241834A70098E0BB /* Modifier */,
@@ -304,6 +307,7 @@
 				DA954C782411D9740052B8FF /* NeumorphismManager.swift in Sources */,
 				DA5AFAC9241691210098E0BB /* NeumorphismButton.swift in Sources */,
 				DAD9549B241BCFBE00D3F56E /* NeumorphismBindingButton.swift in Sources */,
+				AA5875A325263BD40015AF11 /* NeumorphismContent.swift in Sources */,
 				DA5AFACD2418332A0098E0BB /* ShapeType.swift in Sources */,
 				OBJ_32 /* ViewExtension.swift in Sources */,
 				DAD95499241BBD7500D3F56E /* NeumorphismCircleDentView.swift in Sources */,
