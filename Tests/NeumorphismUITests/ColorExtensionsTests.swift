@@ -12,7 +12,7 @@ class ColorExtensiontests: XCTestCase {
     }
     
     func test_init() {
-        XCTAssertEqual(color, Color.black)
+        XCTAssertEqual(color.description.dropFirst(), "000000FF")
     }
     
     func test_getRGBA() {
@@ -20,7 +20,7 @@ class ColorExtensiontests: XCTestCase {
         XCTAssertEqual(red, 0.0)
         XCTAssertEqual(green, 0.0)
         XCTAssertEqual(blue, 0.0)
-        XCTAssertEqual(alpha, 0.0)
+        XCTAssertEqual(alpha, 1.0)
     }
     
     func test_getHSLA() {
@@ -28,7 +28,7 @@ class ColorExtensiontests: XCTestCase {
         XCTAssertEqual(hue, 0.0)
         XCTAssertEqual(saturation, 0.0)
         XCTAssertEqual(lightness, 0.0)
-        XCTAssertEqual(alpha, 0.0)
+        XCTAssertEqual(alpha, 1.0)
     }
     
     // https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6
@@ -37,7 +37,7 @@ class ColorExtensiontests: XCTestCase {
         
         let lightColor = color.lighterColor()
         
-        XCTAssertEqual(lightColor, Color.white)
+        XCTAssertEqual(lightColor.description.dropFirst(), "FFFFFFFF")
     }
     
     func test_darkerColor() {
