@@ -35,7 +35,7 @@ class ColorExtensiontests: XCTestCase {
   // https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6
   func test_lighterColor() {
     let lightColor = color.lighterColor()
-
+    
     XCTAssertEqual(lightColor.description.dropFirst(), "202020FF")
   }
 

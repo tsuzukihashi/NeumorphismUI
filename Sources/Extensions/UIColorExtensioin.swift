@@ -3,9 +3,9 @@ import SwiftUI
 #if canImport(UIKit)
 @available(iOS 13.0, *)
 public extension UIColor {
-    var color: Color {
-        Color(self)
-    }
+  var color: Color {
+    Color(self)
+  }
 }
 #endif
 
