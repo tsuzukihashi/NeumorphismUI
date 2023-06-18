@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-@available(OSX 10.15, *)
+@available(macOS 12.0, *)
 public extension Color {
     
     init(
@@ -21,11 +21,20 @@ public extension Color {
         let b = Double(v / Int(powf(256, 0)) % 256) / 255
         self = Color(red: r, green: g, blue: b, opacity: opacity)
     }
-    
+
+  #if canImport(UIKit)
     func uiColor() -> UIColor {
         let (r, g, b, a) = getRGBA()
         return UIColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: CGFloat(a))
     }
+  #endif
+
+  #if canImport(AppKit)
+  func nsColor() -> NSColor {
+      let (r, g, b, a) = getRGBA()
+      return NSColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: CGFloat(a))
+  }
+  #endif
     
     func getRGBA() -> (r: Double, g: Double, b: Double, a: Double) {
         let str = String(self.description.dropFirst())

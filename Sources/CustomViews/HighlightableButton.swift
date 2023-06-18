@@ -1,6 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
+@available(macOS 12.0, *)
 public struct HighlightableButton<Label>: View where Label: View {
     @State private var isHighlighted = false
     

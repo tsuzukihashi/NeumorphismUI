@@ -1,6 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
+@available(macOS 12.0, *)
 public struct AnyShape: Shape {
     public init<S: Shape>(_ wrapped: S) {
         _path = { rect in

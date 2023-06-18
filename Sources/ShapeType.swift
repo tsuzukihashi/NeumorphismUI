@@ -8,6 +8,7 @@ public enum ShapeType {
     case circle
     
     @available(iOS 13.0, *)
+    @available(macOS 12.0, *)
     var anyShape: AnyShape {
         switch self {
         case .rectangle:

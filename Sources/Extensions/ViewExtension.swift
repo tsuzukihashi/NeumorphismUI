@@ -1,6 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
+@available(macOS 12.0, *)
 public extension View {
     func neumorphismShadow(
         baseColor: Color? = nil,
