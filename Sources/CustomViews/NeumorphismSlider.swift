@@ -4,7 +4,7 @@ import SwiftUI
 @available(macOS 12.0, *)
 public struct NeumorphismSlider: View {
   @EnvironmentObject var neumorphism: NeumorphismManager
-  @Binding var value: Double
+  @Binding var sliderValue: Double
 
   var changeHandler: (() -> Void)?
   var endedHandler: (() -> Void)?
@@ -30,7 +30,7 @@ public struct NeumorphismSlider: View {
     self.tipColor = tipColor
     self.barColor = barColor
     self.showPointer = showPointer
-    self._value = value
+    self._sliderValue = value
     self.changeHandler = changeHandler
     self.endedHandler = endedHandler
     validate()
@@ -44,46 +44,46 @@ public struct NeumorphismSlider: View {
       )
 
       ZStack(alignment: .trailing) {
-        RoundedRectangle(cornerRadius: self.height / 2)
-          .fill(barColor ?? self.neumorphism.color.darkerColor())
+        RoundedRectangle(cornerRadius: height / 2)
+          .fill(barColor ?? neumorphism.color.darkerColor())
           .frame(
-            width: self.width * CGFloat(value),
+            width: width * CGFloat(sliderValue),
             height: height * 0.8,
             alignment: .leading)
           .padding(.init(top: 8, leading: 2, bottom: 8, trailing: 2))
-        if self.showPointer {
+        if showPointer {
           ZStack {
             Circle()
-              .fill(self.neumorphism.color)
-              .frame(width: self.height * 1.5, height: self.height * 1.5)
-              .shadow(color: self.neumorphism.color.darkerColor(), radius: 4, x: 0, y: 0)
+              .fill(neumorphism.color)
+              .frame(width: height * 1.5, height: height * 1.5)
+              .shadow(color: neumorphism.color.darkerColor(), radius: 4, x: 0, y: 0)
           }
         }
       }
     }.gesture(
       DragGesture(minimumDistance: 0)
         .onChanged({ (value) in
-          self.value = Double(value.location.x / self.width)
-          self.validate()
-          self.changeHandler?()
+          sliderValue = Double(value.location.x / width)
+          validate()
+          changeHandler?()
         })
         .onEnded({ (value) in
-          self.value = Double(value.location.x / self.width)
-          self.validate()
-          self.endedHandler?()
+          sliderValue = Double(value.location.x / width)
+          validate()
+          endedHandler?()
         })
     )
   }
 
   private func validate() {
-    if self.value > 1.0 {
+    if sliderValue > 1.0 {
       DispatchQueue.main.async {
-        self.value = 1.0
+        sliderValue = 1.0
       }
     }
-    if self.value < 0 {
+    if sliderValue < 0 {
       DispatchQueue.main.async {
-        self.value = 0
+        sliderValue = 0
       }
     }
   }

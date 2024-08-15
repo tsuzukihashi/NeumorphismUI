@@ -44,23 +44,23 @@ public struct NeumorphismButton: View {
 
   public var body: some View {
     HighlightableButton(action: {
-      self.isSelected.toggle()
-      self.handler?()
+      isSelected.toggle()
+      handler?()
     }) { isHeighlight in
-      (self.isSelected ? self.selectedImage : self.normalImage)
+      (isSelected ? selectedImage : normalImage)
         .resizable()
         .aspectRatio(contentMode: .fit)
-        .frame(width:self.imageWidth, height: self.imageWidth)
-        .foregroundColor(self.neumorphism.fontColor())
+        .frame(width:imageWidth, height: imageWidth)
+        .foregroundColor(neumorphism.fontColor())
         .background(
           Rectangle()
-            .clipShape(self.shapeType.anyShape)
-            .foregroundColor(self.color ?? self.neumorphism.color)
-            .frame(width: self.width, height: self.height)
+            .clipShape(shapeType.anyShape)
+            .foregroundColor(color ?? neumorphism.color)
+            .frame(width: width, height: height)
             .modifier(
-              self.isSelected
-              ? NeumorphismShadowModifier(baseColor: self.color, radius: self.shadowRadius, isAnimation: isHeighlight)
-              : NeumorphismShadowModifier(baseColor: self.color, radius: self.shadowRadius, isAnimation: isHeighlight)
+              isSelected
+              ? NeumorphismShadowModifier(baseColor: color, radius: shadowRadius, isAnimation: isHeighlight)
+              : NeumorphismShadowModifier(baseColor: color, radius: shadowRadius, isAnimation: isHeighlight)
             )
         )
         .padding()

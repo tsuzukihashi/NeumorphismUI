@@ -10,7 +10,7 @@ public extension View {
     y: CGFloat = 8,
     isAnimation: Bool = false
   ) -> some View {
-    self.modifier(NeumorphismShadowModifier(
+    modifier(NeumorphismShadowModifier(
       baseColor: baseColor,
       radius: radius,
       x: x,
@@ -23,7 +23,7 @@ public extension View {
     shapeType: ShapeType = .circle,
     color: Color? = nil
   ) -> some View {
-    self.modifier(NeumorphismConcaveModifier(
+    modifier(NeumorphismConcaveModifier(
       shapeType: shapeType, color: color
     ))
   }

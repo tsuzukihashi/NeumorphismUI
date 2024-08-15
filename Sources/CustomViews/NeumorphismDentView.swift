@@ -27,8 +27,8 @@ public struct NeumorphismDentView: View {
 
   public var body: some View {
     Rectangle()
-      .fill(self.color ?? self.neumorphism.color)
-      .frame(width: self.width, height: self.height)
+      .fill(color ?? neumorphism.color)
+      .frame(width: width, height: height)
       .neumorphismConcave(shapeType: shapeType, color: color)
   }
 }

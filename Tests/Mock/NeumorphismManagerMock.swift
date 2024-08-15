@@ -1,5 +1,4 @@
 import SwiftUI
-@testable import NeumorphismUI
 
 @available(iOS 13.0, *)
 class NeumorphismManagerMock: NeumorphismManagable {

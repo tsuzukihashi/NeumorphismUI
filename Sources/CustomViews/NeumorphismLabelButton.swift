@@ -5,6 +5,7 @@ import SwiftUI
 public struct NeumorphismLabelButton: View {
   @EnvironmentObject var neumorphism: NeumorphismManager
   @State var isSelected = false
+
   private var text: String
   private var font: Font?
   private var color: Color?
@@ -34,21 +35,21 @@ public struct NeumorphismLabelButton: View {
 
   public var body: some View {
     HighlightableButton(action: {
-      self.isSelected.toggle()
-      self.handler?()
+      isSelected.toggle()
+      handler?()
     }) { isHeighlight in
       ZStack {
-        RoundedRectangle(cornerRadius: self.cornerRadius)
-          .fill(self.neumorphism.color)
-          .frame(width: self.width, height: self.height)
+        RoundedRectangle(cornerRadius: cornerRadius)
+          .fill(neumorphism.color)
+          .frame(width: width, height: height)
           .modifier(NeumorphismShadowModifier(isAnimation: isHeighlight))
           .padding()
 
 
-        Text(self.text)
-          .font(self.font ?? .title)
+        Text(text)
+          .font(font ?? .title)
           .foregroundColor(
-            isHeighlight ? self.color?.darkerColor() ?? self.neumorphism.fontColor() : self.color ?? self.neumorphism.fontColor())
+            isHeighlight ? color?.darkerColor() ?? neumorphism.fontColor() : color ?? neumorphism.fontColor())
       }
       .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
     }

@@ -19,14 +19,14 @@ public struct HighlightableButton<Label>: View where Label: View {
         DragGesture(minimumDistance: 0.0)
           .onChanged { _ in
             withAnimation {
-              self.isHighlighted = true
+              isHighlighted = true
             }}
           .onEnded { value in
             if abs(value.translation.height) <= 64 {
-              self.action()
+              action()
             }
             withAnimation {
-              self.isHighlighted = false
+              isHighlighted = false
             }}
       )
       .animation(Animation.easeIn(duration: 0.05))
