@@ -9,7 +9,7 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
       ScrollView(.vertical, showsIndicators: false) {
-        VStack (spacing: 0){
+        VStack (spacing: 20) {
           HStack {
             ZStack {
               RoundedRectangle(cornerRadius: 24)
@@ -31,29 +31,36 @@ struct ContentView: View {
             }
           }
 
-          Spacer()
-
           NavigationLink(destination: SimpleView()) {
             BaseView(name: "SimpleView", desc: "most simple neumorphism")
-          }.padding()
+          }
+          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
 
           NavigationLink(destination: Concave()) {
             BaseView(name: "Concave", desc: "concave neumorphism")
-          }.padding()
+          }
+          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
 
           NavigationLink(destination: NeumorphismButtonView()) {
             BaseView(name: "NeumorphismButtonView", desc: "neumorphism button")
-          }.padding()
+          }
+          .buttonStyle(
+            .neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8))
+          )
 
           NavigationLink(destination: BindingButtonView()) {
             BaseView(name: "NeumorphismBindingButton", desc: "neumorphism binding button")
-          }.padding()
+          }
+          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
 
           NavigationLink(destination: NeumorphismSliderView()) {
             BaseView(name: "NeumorphismSlider", desc: "custom slider")
-          }.padding()
+          }
+          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
+
           Spacer()
         }
+        .padding(.horizontal)
       }.background(self.neumorphism.color.edgesIgnoringSafeArea(.all))
     }.navigationViewStyle(StackNavigationViewStyle())
   }
