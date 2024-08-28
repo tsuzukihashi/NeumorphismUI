@@ -13,29 +13,35 @@ public struct NeumophismButtonStyle: ButtonStyle {
   @EnvironmentObject var neumorphism: NeumorphismManager
 
   private var shapeType: ShapeType
+  private let fontColor: Color?
+  private let baseColor: Color?
 
-  init(shapeType: ShapeType) {
+  init(shapeType: ShapeType, fontColor: Color?, baseColor: Color?) {
     self.shapeType = shapeType
+    self.fontColor = fontColor
+    self.baseColor = baseColor
   }
 
   public func makeBody(configuration: Configuration) -> some View {
     configuration.label
+      .foregroundColor(fontColor ?? neumorphism.fontColor())
       .background(
         Rectangle()
           .clipShape(shapeType.anyShape)
-          .foregroundColor(neumorphism.color)
+          .foregroundColor(baseColor ?? neumorphism.color)
           .modifier(
             configuration.isPressed
-            ? NeumorphismShadowModifier(baseColor: neumorphism.color, radius: 8, isAnimation: configuration.isPressed)
-            : NeumorphismShadowModifier(baseColor: neumorphism.color, radius: 8, isAnimation: configuration.isPressed)
+            ? NeumorphismShadowModifier(baseColor: baseColor ?? neumorphism.color, radius: 8, isAnimation: configuration.isPressed)
+            : NeumorphismShadowModifier(baseColor: baseColor ?? neumorphism.color, radius: 8, isAnimation: configuration.isPressed)
           )
       )
       .animation(.spring(response: 0.2, dampingFraction: 0.9), value: configuration.isPressed)
   }
 }
 
+@available(iOS 13.0, *)
 public extension ButtonStyle where Self == NeumophismButtonStyle {
-  static func neumophismButton(shapeType: ShapeType) -> Self {
-    .init(shapeType: shapeType)
+  static func neumophismButton(shapeType: ShapeType, fontColor: Color? = nil, baseColor: Color? = nil) -> Self {
+    .init(shapeType: shapeType, fontColor: fontColor, baseColor: baseColor)
   }
 }
