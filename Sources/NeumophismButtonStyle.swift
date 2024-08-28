@@ -13,18 +13,15 @@ public struct NeumophismButtonStyle: ButtonStyle {
   @EnvironmentObject var neumorphism: NeumorphismManager
 
   private var shapeType: ShapeType
-  private let fontColor: Color?
   private let baseColor: Color?
 
-  init(shapeType: ShapeType, fontColor: Color?, baseColor: Color?) {
+  init(shapeType: ShapeType, baseColor: Color?) {
     self.shapeType = shapeType
-    self.fontColor = fontColor
     self.baseColor = baseColor
   }
 
   public func makeBody(configuration: Configuration) -> some View {
     configuration.label
-      .foregroundColor(fontColor ?? neumorphism.fontColor())
       .background(
         Rectangle()
           .clipShape(shapeType.anyShape)
@@ -41,7 +38,7 @@ public struct NeumophismButtonStyle: ButtonStyle {
 
 @available(iOS 13.0, *)
 public extension ButtonStyle where Self == NeumophismButtonStyle {
-  static func neumophismButton(shapeType: ShapeType, fontColor: Color? = nil, baseColor: Color? = nil) -> Self {
-    .init(shapeType: shapeType, fontColor: fontColor, baseColor: baseColor)
+  static func neumophismButton(shapeType: ShapeType, baseColor: Color? = nil) -> Self {
+    .init(shapeType: shapeType, baseColor: baseColor)
   }
 }
