@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
-public struct NeumophismButtonStyle: ButtonStyle {
+public struct NeumorphismButtonStyle: ButtonStyle {
   @EnvironmentObject var neumorphism: NeumorphismManager
 
   private var shapeType: ShapeType
@@ -36,8 +34,19 @@ public struct NeumophismButtonStyle: ButtonStyle {
   }
 }
 
-@available(iOS 13.0, *)
-public extension ButtonStyle where Self == NeumophismButtonStyle {
+public extension ButtonStyle where Self == NeumorphismButtonStyle {
+  static func neumorphismButton(shapeType: ShapeType, baseColor: Color? = nil) -> Self {
+    .init(shapeType: shapeType, baseColor: baseColor)
+  }
+}
+
+// MARK: - Deprecated aliases for backward compatibility
+
+@available(*, deprecated, renamed: "NeumorphismButtonStyle")
+public typealias NeumophismButtonStyle = NeumorphismButtonStyle
+
+public extension ButtonStyle where Self == NeumorphismButtonStyle {
+  @available(*, deprecated, renamed: "neumorphismButton")
   static func neumophismButton(shapeType: ShapeType, baseColor: Color? = nil) -> Self {
     .init(shapeType: shapeType, baseColor: baseColor)
   }
