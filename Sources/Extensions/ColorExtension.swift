@@ -1,7 +1,5 @@
 import SwiftUI
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 public extension Color {
 
   init(
@@ -24,26 +22,33 @@ public extension Color {
 
 #if canImport(UIKit)
   func uiColor() -> UIColor {
-    let (r, g, b, a) = getRGBA()
-    return UIColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: CGFloat(a))
+    UIColor(self)
   }
 #endif
 
 #if canImport(AppKit)
   func nsColor() -> NSColor {
-    let (r, g, b, a) = getRGBA()
-    return NSColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: CGFloat(a))
+    NSColor(self)
   }
 #endif
 
   func getRGBA() -> (r: Double, g: Double, b: Double, a: Double) {
-    let str = String(self.description.dropFirst())
-    let value = Int(str, radix: 16) ?? 0
-    let r = Double(value / Int(powf(256, 3)) % 256) / 255
-    let g = Double(value / Int(powf(256, 2)) % 256) / 255
-    let b = Double(value / Int(powf(256, 1)) % 256) / 255
-    let a = Double(value / Int(powf(256, 0)) % 256) / 255
-    return (r, g, b, a)
+#if canImport(UIKit)
+    var red: CGFloat = 0
+    var green: CGFloat = 0
+    var blue: CGFloat = 0
+    var alpha: CGFloat = 0
+    UIColor(self).getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+    return (Double(red), Double(green), Double(blue), Double(alpha))
+#elseif canImport(AppKit)
+    let nsColor = NSColor(self).usingColorSpace(.sRGB) ?? NSColor(self)
+    var red: CGFloat = 0
+    var green: CGFloat = 0
+    var blue: CGFloat = 0
+    var alpha: CGFloat = 0
+    nsColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+    return (Double(red), Double(green), Double(blue), Double(alpha))
+#endif
   }
 
   func getHSLA() -> (h: Double, s: Double, l: Double, a: Double) {
@@ -51,7 +56,7 @@ public extension Color {
     let (h, s, l) = ColorTransformer.rgbToHsl(r: r, g: g, b: b)
     return (h, s, l, a)
   }
-  
+
   func lighterColor() -> Color {
     let (h, s, l, a) = getHSLA()
     return Color(hue: h, saturation: s, lightness: min(l + 0.12, 1), opacity: a)
