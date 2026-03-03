@@ -1,6 +1,7 @@
 import SwiftUI
+@testable import NeumorphismUI
 
-@available(iOS 13.0, *)
+@MainActor
 class NeumorphismManagerMock: NeumorphismManagable {
   var isDark = false
 

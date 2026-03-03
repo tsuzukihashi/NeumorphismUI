@@ -2,7 +2,7 @@ import XCTest
 import SwiftUI
 @testable import NeumorphismUI
 
-@available(iOS 13.0, *)
+@MainActor
 class NeumorphismManagerTests: XCTestCase {
 
   var mock: NeumorphismManagerMock!
