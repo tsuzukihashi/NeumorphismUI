@@ -1,7 +1,5 @@
 import SwiftUI
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 public struct NeumorphismDentView: View {
   @EnvironmentObject var neumorphism: NeumorphismManager
 
@@ -33,8 +31,6 @@ public struct NeumorphismDentView: View {
   }
 }
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 struct NeumorphismTextView_Previews: PreviewProvider {
   static let neumorphism = NeumorphismManager(
     lightColor: Color(hex: "C1D2EB"),

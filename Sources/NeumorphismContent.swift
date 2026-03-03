@@ -1,7 +1,5 @@
 import SwiftUI
 
-@available(iOS 14.0, *)
-@available(macOS 12.0, *)
 public struct NeumorphismContent: LibraryContentProvider {
   @LibraryContentBuilder
   public var views: [LibraryItem] {
@@ -37,4 +35,3 @@ public struct NeumorphismContent: LibraryContentProvider {
     )
   }
 }
-
