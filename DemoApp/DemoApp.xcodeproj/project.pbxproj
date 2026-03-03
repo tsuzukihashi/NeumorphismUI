@@ -3,21 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA1A6B6E240B81A4001EA5EB /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A6B6D240B81A4001EA5EB /* DemoApp.swift */; };
-		DA1A6B72240B81A4001EA5EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A6B71240B81A4001EA5EB /* ContentView.swift */; };
-		DA1A6B74240B81A6001EA5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A6B73240B81A6001EA5EB /* Assets.xcassets */; };
-		DA1A6B77240B81A6001EA5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1A6B76240B81A6001EA5EB /* Preview Assets.xcassets */; };
-		DA1A6B7A240B81A6001EA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1A6B78240B81A6001EA5EB /* LaunchScreen.storyboard */; };
-		DA5AFAD32418367C0098E0BB /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AFAD22418367C0098E0BB /* SimpleView.swift */; };
-		DA5D60CC2422727E0021B0B7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60CB2422727E0021B0B7 /* BaseView.swift */; };
-		DA5D60CF2422767E0021B0B7 /* Concave.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60CE2422767E0021B0B7 /* Concave.swift */; };
-		DA5D60D1242277C50021B0B7 /* NeumorphismButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */; };
-		DA5D60D324239E090021B0B7 /* BindingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D60D224239E090021B0B7 /* BindingButtonView.swift */; };
-		DA6FEED324311E5800C1B554 /* NeumorphismSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6FEED224311E5700C1B554 /* NeumorphismSliderView.swift */; };
 		DA74B267240B820400AD9A06 /* NeumorphismUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA74B266240B820400AD9A06 /* NeumorphismUI.framework */; };
 		DA74B268240B820400AD9A06 /* NeumorphismUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA74B266240B820400AD9A06 /* NeumorphismUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -38,20 +27,22 @@
 
 /* Begin PBXFileReference section */
 		DA1A6B6A240B81A4001EA5EB /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA1A6B6D240B81A4001EA5EB /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
-		DA1A6B71240B81A4001EA5EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DA1A6B73240B81A6001EA5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA1A6B76240B81A6001EA5EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA1A6B79240B81A6001EA5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DA1A6B7B240B81A6001EA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA5AFAD22418367C0098E0BB /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
-		DA5D60CB2422727E0021B0B7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		DA5D60CE2422767E0021B0B7 /* Concave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concave.swift; sourceTree = "<group>"; };
-		DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonView.swift; sourceTree = "<group>"; };
-		DA5D60D224239E090021B0B7 /* BindingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingButtonView.swift; sourceTree = "<group>"; };
-		DA6FEED224311E5700C1B554 /* NeumorphismSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismSliderView.swift; sourceTree = "<group>"; };
 		DA74B266240B820400AD9A06 /* NeumorphismUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NeumorphismUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2EA2E2A62F5682DD0057A139 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DA1A6B69240B81A4001EA5EB /* DemoApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2EA2E2992F5682DD0057A139 /* DemoApp */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2EA2E2A62F5682DD0057A139 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = DemoApp; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DA1A6B67240B81A4001EA5EB /* Frameworks */ = {
@@ -68,7 +59,7 @@
 		DA1A6B61240B81A4001EA5EB = {
 			isa = PBXGroup;
 			children = (
-				DA1A6B6C240B81A4001EA5EB /* DemoApp */,
+				2EA2E2992F5682DD0057A139 /* DemoApp */,
 				DA1A6B6B240B81A4001EA5EB /* Products */,
 				DA74B265240B820400AD9A06 /* Frameworks */,
 			);
@@ -80,41 +71,6 @@
 				DA1A6B6A240B81A4001EA5EB /* DemoApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DA1A6B6C240B81A4001EA5EB /* DemoApp */ = {
-			isa = PBXGroup;
-			children = (
-				DA1A6B6D240B81A4001EA5EB /* DemoApp.swift */,
-				DA1A6B71240B81A4001EA5EB /* ContentView.swift */,
-				DA5D60CB2422727E0021B0B7 /* BaseView.swift */,
-				DA5D60CD242276650021B0B7 /* Views */,
-				DA1A6B73240B81A6001EA5EB /* Assets.xcassets */,
-				DA1A6B78240B81A6001EA5EB /* LaunchScreen.storyboard */,
-				DA1A6B7B240B81A6001EA5EB /* Info.plist */,
-				DA1A6B75240B81A6001EA5EB /* Preview Content */,
-			);
-			path = DemoApp;
-			sourceTree = "<group>";
-		};
-		DA1A6B75240B81A6001EA5EB /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				DA1A6B76240B81A6001EA5EB /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DA5D60CD242276650021B0B7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DA5AFAD22418367C0098E0BB /* SimpleView.swift */,
-				DA5D60CE2422767E0021B0B7 /* Concave.swift */,
-				DA5D60D224239E090021B0B7 /* BindingButtonView.swift */,
-				DA6FEED224311E5700C1B554 /* NeumorphismSliderView.swift */,
-				DA5D60D0242277C50021B0B7 /* NeumorphismButtonView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		DA74B265240B820400AD9A06 /* Frameworks */ = {
@@ -140,6 +96,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2EA2E2992F5682DD0057A139 /* DemoApp */,
 			);
 			name = DemoApp;
 			productName = DemoApp;
@@ -184,9 +143,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1A6B7A240B81A6001EA5EB /* LaunchScreen.storyboard in Resources */,
-				DA1A6B77240B81A6001EA5EB /* Preview Assets.xcassets in Resources */,
-				DA1A6B74240B81A6001EA5EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,29 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5AFAD32418367C0098E0BB /* SimpleView.swift in Sources */,
-				DA5D60D1242277C50021B0B7 /* NeumorphismButtonView.swift in Sources */,
-				DA1A6B6E240B81A4001EA5EB /* DemoApp.swift in Sources */,
-				DA5D60D324239E090021B0B7 /* BindingButtonView.swift in Sources */,
-				DA5D60CF2422767E0021B0B7 /* Concave.swift in Sources */,
-				DA1A6B72240B81A4001EA5EB /* ContentView.swift in Sources */,
-				DA6FEED324311E5800C1B554 /* NeumorphismSliderView.swift in Sources */,
-				DA5D60CC2422727E0021B0B7 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DA1A6B78240B81A6001EA5EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA1A6B79240B81A6001EA5EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA1A6B7C240B81A6001EA5EB /* Debug */ = {
@@ -272,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +282,7 @@
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +303,7 @@
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
