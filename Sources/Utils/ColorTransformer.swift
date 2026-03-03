@@ -1,5 +1,5 @@
 
-internal enum ColorTransformer {
+internal enum ColorTransformer: Sendable {
     static func hslToHsb(
         h: Double,
         s: Double,
