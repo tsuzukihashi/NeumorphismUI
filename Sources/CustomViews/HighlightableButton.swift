@@ -1,7 +1,5 @@
 import SwiftUI
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 public struct HighlightableButton<Label>: View where Label: View {
   @State private var isHighlighted = false
 
@@ -29,6 +27,6 @@ public struct HighlightableButton<Label>: View where Label: View {
               isHighlighted = false
             }}
       )
-      .animation(Animation.easeIn(duration: 0.05))
+      .animation(.easeIn(duration: 0.05), value: isHighlighted)
   }
 }

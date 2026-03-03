@@ -1,7 +1,5 @@
 import SwiftUI
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 public struct NeumorphismBindingButton: View {
   @EnvironmentObject var neumorphism: NeumorphismManager
   @Binding var isSelected: Bool
@@ -59,13 +57,11 @@ public struct NeumorphismBindingButton: View {
             .modifier(isSelected ? NeumorphismShadowModifier(radius: shadowRadius, isAnimation: isSelected ) : NeumorphismShadowModifier(radius: shadowRadius, isAnimation: isHeighlight))
         )
         .padding()
-        .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
+        .animation(.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1), value: isHeighlight)
     }
   }
 }
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 struct NeumorphismBindingButton_Previews: PreviewProvider {
   static let neumorphism = NeumorphismManager(
     lightColor: Color(hex: "C1D2EB"),

@@ -1,7 +1,5 @@
 import SwiftUI
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 public struct NeumorphismLabelButton: View {
   @EnvironmentObject var neumorphism: NeumorphismManager
   @State var isSelected = false
@@ -51,13 +49,11 @@ public struct NeumorphismLabelButton: View {
           .foregroundColor(
             isHeighlight ? color?.darkerColor() ?? neumorphism.fontColor() : color ?? neumorphism.fontColor())
       }
-      .animation(Animation.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1))
+      .animation(.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 1), value: isHeighlight)
     }
   }
 }
 
-@available(iOS 13.0, *)
-@available(macOS 12.0, *)
 struct NeumorphismLabelButton_Previews: PreviewProvider {
   static let neumorphism = NeumorphismManager(
     lightColor: Color(hex: "C1D2EB"),
