@@ -7,7 +7,7 @@ struct ContentView: View {
   @State var isDark = false
 
   var body: some View {
-    NavigationView {
+    NavigationStack {
       ScrollView(.vertical, showsIndicators: false) {
         VStack (spacing: 20) {
           HStack {
@@ -34,35 +34,35 @@ struct ContentView: View {
           NavigationLink(destination: SimpleView()) {
             BaseView(name: "SimpleView", desc: "most simple neumorphism")
           }
-          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
+          .buttonStyle(.neumorphismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
 
           NavigationLink(destination: Concave()) {
             BaseView(name: "Concave", desc: "concave neumorphism")
           }
-          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
+          .buttonStyle(.neumorphismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
 
           NavigationLink(destination: NeumorphismButtonView()) {
             BaseView(name: "NeumorphismButtonView", desc: "neumorphism button")
           }
           .buttonStyle(
-            .neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8))
+            .neumorphismButton(shapeType: .roundedRectangle(cornerRadius: 8))
           )
 
           NavigationLink(destination: BindingButtonView()) {
             BaseView(name: "NeumorphismBindingButton", desc: "neumorphism binding button")
           }
-          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
+          .buttonStyle(.neumorphismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
 
           NavigationLink(destination: NeumorphismSliderView()) {
             BaseView(name: "NeumorphismSlider", desc: "custom slider")
           }
-          .buttonStyle(.neumophismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
+          .buttonStyle(.neumorphismButton(shapeType: .roundedRectangle(cornerRadius: 8)))
 
           Spacer()
         }
         .padding(.horizontal)
-      }.background(self.neumorphism.color.edgesIgnoringSafeArea(.all))
-    }.navigationViewStyle(StackNavigationViewStyle())
+      }.background(self.neumorphism.color.ignoresSafeArea())
+    }
   }
 }
 
